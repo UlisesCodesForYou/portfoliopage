@@ -1,27 +1,41 @@
 import Image from 'next/image'
+import {useRef} from 'react';
+import scrollToTop from "../scrollToTop";
+import ScrollTotTop from "../scrollToTop";
 
 export const MainPage = () => {
+    const aboutMe = useRef<HTMLDivElement>(null)
+    const myProjects = useRef<HTMLDivElement>(null)
+    const myResume = useRef<HTMLDivElement>(null)
+    const contactMe = useRef<HTMLDivElement>(null)
+
+
+    const scrollToSection = (elementRef: any) => {
+        window.scrollTo({
+            top: elementRef.current.offsetTop,
+            behavior: "smooth"
+        })
+    }
+
     return (
         <>
 
             <section className="bg-gray-50 dark:bg-gray-800">
                 <nav className="fixed top-0 left-0 w-full py-6 bg-teal-600">
                     <div className="container mx-auto flex justify-between">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 animate-bounce">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                        </svg>
+                        <Image src="/Chef-hat2.png" width={50} height={50} alt="chef hat" className= "animate-bounce"/>
                         <ul className="text-sm tracking-wide items-center flex gap-x-8">
                             <li className="hover:scale-125 duration-300 py-1 text-white">
-                                <a className="hover:cursor-pointer">About me!</a>
+                                <a className="hover:cursor-pointer" onClick={() => scrollToSection(aboutMe)}>About me</a>
                             </li>
                             <li className="hover:scale-125 duration-300 py-1 text-white">
-                                <a className="hover:cursor-pointer">Technology Used</a>
+                                <a className="hover:cursor-pointer" onClick={() => scrollToSection(myProjects)}>My projects</a>
                             </li>
                             <li className="hover:scale-125 duration-300 py-1 text-white">
-                                <a className="hover:cursor-pointer">My resume</a>
+                                <a className="hover:cursor-pointer"  onClick={() => scrollToSection(myResume)}>My resume</a>
                             </li>
-                           <button className="bg-white rounded-full tracking-wide py-3 px-7 text-xs hover:scale-110 duration-300 hover:bg-teal-100">
-                               CONTACT ME!
+                           <button className="bg-white rounded-full tracking-wide py-3 px-7 text-xs hover:scale-110 duration-300 hover:bg-[#F05307]">
+                               <a  onClick={() => scrollToSection(myProjects)}>CONTACT ME</a>
                            </button>
                         </ul>
                     </div>
@@ -31,22 +45,16 @@ export const MainPage = () => {
                     <div className="w-full lg:w-1/2">
                         <div className="lg:max-w-lg">
                             <h1 className="text-xl sm:text text-center font-bold font-pageFont text-teal-600 dark:text-white lg:text-4xl">
-                                Hi! I'm Ulises Orozco!
+                                {/* eslint-disable-next-line react/no-unescaped-entities */}
+                                Hi, I'm Ulises Orozco.
                             </h1>
 
                             <div className="mt-8 space-y-5 ">
                                 <p className="flex items-center -mx-2 text-teal-600 md:text text-center font-pageFont dark:text-gray-200">
-                                    I am a former Chef turned web developer. I enjoy creating creating apps and websites.  I believe that both the Culinary and Software development
-                                    industries have the same root value; they both deal with providing a great user/guest experiences.
+                                    I am a former Chef turned web developer. I design and build websites and apps. I believe that both the Culinary and Software development
+                                    industries have the same root value; they both deal with providing great user/guest experiences.
                                 </p>
-
-                                <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
-
-                                </p>
-
-                                <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
-
-                                </p>
+                                <p className="flex items-center -mx-2 text-teal-600 md:text text-center font-pageFont dark:text-gray-200" />
                             </div>
                         </div>
 
@@ -58,13 +66,39 @@ export const MainPage = () => {
             </section>
 
 
+            {/*About me section */}
+            <ScrollTotTop />
+            <section className="bg-gray-50 dark:bg-gray-800" ref={aboutMe}>
+                <div className="mr-6 ml-6 py-10 px-20 text-center" >
+                    <p>
+                        <span className="text-4xl font-medium font-pageFont text-teal-600">About me</span> <br/>
+                    </p>
+                </div>
+                <div className="container flex mt-10 px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
+                    <div className="w-full lg:w-1/2">
+                        <div className="lg:max-w-lg">
+                            <div className="mt-8 space-y-5 ">
+                                <p className="flex items-center -mx-2 text-teal-600 md:text text-center font-pageFont dark:text-gray-200">
+                                   Hello once again!  My name is Ulises Orozco and I enjoy creating websites and apps.  My journey to become a web developer started back in 2017.
+                                    {/* eslint-disable-next-line react/no-unescaped-entities */}
+                                    And GAAD foudation link here and other stuff that don't make people feel sorry for me. Also, make this center or add an selfie of me on the right hand side
+                                </p>
+                                <p className="flex items-center -mx-2 text-teal-600 md:text text-center font-pageFont dark:text-gray-200" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
 
             {/*My work section*/}
-            <section className="bg-gray-50 dark:bg-gray-800">
+            <section className="bg-gray-50 dark:bg-gray-800" ref={myProjects}>
                 {/*component*/}
                 <div className="mr-6 ml-6 bg-teal-600 shadow-xl shadow-teal-200-200 py-10 px-20 text-center">
                     <p className=" text-teal-600 ">
-                        <span className="text-4xl font-medium text-white">Technologies</span> <br/> <span className="text-lg text-white">Below are a few examples of the the techcnologies I have used along with the sites/apps I created using them.</span>
+                        <span className="text-4xl font-medium text-white">Projects</span> <br/>
+                        <span className="text-lg text-white">Below are a few of my projects along with the technologies I used to create them.</span>
                     </p>
                 </div>
                 <div className=" px-3 md:lg:xl:px-20 border-t border-b py-20 bg-opacity-10">
