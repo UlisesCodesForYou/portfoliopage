@@ -84,17 +84,17 @@ export const MainPage = () => {
                         <span className="text-4xl font-medium text-white">Technologies</span> <br/> <span className="text-lg text-white">Below are a few examples of the the techcnologies I have used along with the sites/apps I created using them.</span>
                     </p>
                 </div>
-                <div className="mr-6 ml-6 px-3 md:lg:xl:px-40 border-t border-b py-20 bg-opacity-10">
+                <div className=" px-3 md:lg:xl:px-20 border-t border-b py-20 bg-opacity-10">
                     <div className="grid grid-cols-1 md:lg:xl:grid-cols-3 group bg-gray-50 shadow-xl shadow-neutral-100 border">
                         <div className="p-10 flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b hover:bg-slate-50 cursor-pointer">
                             <p className="text-3xl font-medium font-bold font-pageFont text-teal-600 mt-3 mb-2">
                                 Cutlery Corner
                             </p>
-                            <Image src="/Cutlery-Corner.png" width={700} height={700} alt="cutlery store"></Image>
+                            <Image src="/Cutlery-Corner.png" width={500} height={700} alt="cutlery store" />
                             <p className="text-xl font-medium mt-3 font-bold font-pageFont text-teal-600 ">
                                 REACT and REACT Router
                             </p>
-                            <Image src="/React-logo.png" alt="/" width={90} height={90}/>
+                            <Image src="/React-img.png" alt="/" width={90} height={90}/>
 
                             <p className="mt-2 text-sm font-pageFont text-teal-600 ">
                                 As a former chef, I thought it would be fun to finally create one. This is a static, cutlery website with functioning tabs.
@@ -105,11 +105,12 @@ export const MainPage = () => {
                             <p className="text-3xl font-bold font-pageFont text-teal-600 mt-3 mb-2">
                                 Thriftster Mobile App
                             </p>
-                            <Image src="/Thriftster.png" width={200} height={200} alt="cutlery store"></Image>
+                            <Image src="/Thriftster-page.png" width={200} height={200} alt="cutlery store"></Image>
 
                             <div className="flex space-x-4">
-                                <Image src="/NextJs.png" width={60} height={60} alt="/" />
+                                <Image src="/NextJs.png" width={100} height={100} alt="/" />
                                 <Image src="/Typescript.png" alt="/" width={60} height={30} />
+                                <Image src="/Tailwind-logo.png" alt="/" width={60} height={30} />
                             </div>
 
                             <p className="mt-2 text-sm font-pageFont text-teal-600 ">
@@ -123,9 +124,11 @@ export const MainPage = () => {
                                 GAAD Foundation
                             </p>
                             <Image src="/GAAD-Foundation.png" width={500} height={500} alt="cutlery store"></Image>
-                            <p className="text-2xl font-bold font-pageFont text-teal-600 mt-3">
-                                NEXT Js, Typescript, and Mantine.
-                            </p>
+                            <div className="flex space-x-4">
+                                <Image src="/NextJs.png" width={100} height={100} alt="/" />
+                                <Image src="/Typescript.png" alt="/" width={60} height={40} />
+                                <Image src="/Mantine-logo.png" alt="/" width={60} height={40} />
+                            </div>
                             <p className="mt-2 text-sm font-pageFont text-teal-600 ">
                               I am currently volunteering in the reconstruction of this website.  GAAD foundtion was created he purpose of GAAD is to get everyone talking, thinking and learning about digital access and inclusion, and the more than One Billion people with disabilities/impairments.
                             </p>
