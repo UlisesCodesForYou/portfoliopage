@@ -94,6 +94,7 @@ export const MainPage = () => {
                             <p className="text-xl font-medium mt-3 font-bold font-pageFont text-teal-600 ">
                                 REACT and REACT Router
                             </p>
+                            <Image src="/React-logo.png" alt="/" width={90} height={90}/>
 
                             <p className="mt-2 text-sm font-pageFont text-teal-600 ">
                                 As a former chef, I thought it would be fun to finally create one. This is a static, cutlery website with functioning tabs.
@@ -105,9 +106,12 @@ export const MainPage = () => {
                                 Thriftster Mobile App
                             </p>
                             <Image src="/Thriftster.png" width={200} height={200} alt="cutlery store"></Image>
-                            <p className="text-2xl font-bold font-pageFont text-teal-600 mt-3">
-                                NEXT Js, Typescript, and Tailwind CSS.
-                            </p>
+
+                            <div className="flex space-x-4">
+                                <Image src="/NextJs.png" width={60} height={60} alt="/" />
+                                <Image src="/Typescript.png" alt="/" width={60} height={30} />
+                            </div>
+
                             <p className="mt-2 text-sm font-pageFont text-teal-600 ">
                                 This app was created after going to the thrift store and finding a hidden treasure at a low price. I also wanted to share the location of the store I found it in.
                                 So, I decided to create this app to do so.
