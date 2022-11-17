@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Head from 'next/head';
+
 
 
 export const HomePage =() => {
@@ -15,7 +15,7 @@ export const HomePage =() => {
                             About Me
                         </h1>
                         <h2>
-                           Hi, I'm Ulises!  I am a former Chef turned web developer. I enjoy creating creating apps and websites.  I believe that both the Culinary and Software development
+                           Hi, I am Ulises!  I am a former Chef turned web developer. I enjoy creating creating apps and websites.  I believe that both the Culinary and Software development
                             industries have the same root value; they both deal with providing a great user/guest experiences.
                         </h2>
                         <h1 className="text-xl mb-3 mt-4 underline underline-offset-1 ">
