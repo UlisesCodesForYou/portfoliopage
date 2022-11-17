@@ -259,8 +259,9 @@ export const MainPage = () => {
                                </textarea>
                                {enteredTextInputHasError && (<p className="text-red-500 text-xs italic mt-2">Please leave me a message. I'm so lonely!! Just kidding...or am I?</p>)}
                            </div>
-                           <button className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-                               View my code
+                           <button className="bg-teal-600 hover:bg-[#F05307] hover:scale-110 duration-300 text-white m-auto font-bold rounded-full tracking-wide py-3 px-7 focus:outline-none disabled:opacity-60"
+                               disabled={!formIsValid}>
+                               Send
                            </button>
                        </form>
                    </div>
