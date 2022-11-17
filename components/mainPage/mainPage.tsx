@@ -2,7 +2,10 @@ import Image from 'next/image'
 import {useRef} from 'react';
 import Link from 'next/link'
 import Footer from "../footer";
+import useInput from "../../hooks";
 
+const isNotEmpty = (value: string) => value.trim() !== ''
+const isEmail = (value: string) => value.includes('@')
 
 export const MainPage = () => {
     const aboutMe = useRef<HTMLDivElement>(null)
@@ -17,7 +20,52 @@ export const MainPage = () => {
         })
     }
 
-    return (
+    const {
+        value: enteredEmail,
+        hasError: emailInputHasError,
+        valueChangeHandler: emailChangedHandler,
+        isValid: enteredEmailIsValid,
+        inputBlurHandler: emailBlurHandler,
+        reset: resetEmailInput
+    } = useInput(isEmail)
+
+    const {
+        value: enteredSubject,
+        hasError: enteredSubjectInputHasError,
+        valueChangeHandler: enteredSubjectChangedHandler,
+        isValid: enteredSubjectIsValid,
+        inputBlurHandler: enteredSubjectBlurHandler,
+        reset: resetSubjectInput
+    } = useInput(isNotEmpty)
+
+    const {
+        value: enteredText,
+        hasError: enteredTextInputHasError,
+        valueChangeHandler: enteredTextChangedHandler,
+        isValid: enteredTextIsValid,
+        inputBlurHandler: enteredTextBlurHandler,
+        reset: resetEnteredInput
+    } = useInput(isNotEmpty)
+
+    let formIsValid: boolean;
+    formIsValid = false;
+    if (enteredTextIsValid && enteredEmailIsValid && enteredSubjectIsValid) {
+        formIsValid = true
+    }
+
+    const formSubmissionHandler = (event: React.FormEvent) => {
+        event.preventDefault()
+        if (!enteredTextIsValid && !enteredEmailIsValid && !enteredSubjectIsValid) {
+            return;
+        }
+        resetEmailInput();
+        resetEnteredInput();
+        resetSubjectInput();
+    }
+
+
+
+        return (
         <>
            <div className="bg-gray-50 flex flex-col h-screen justify-between">
                <section className="bg-gray-50 dark:bg-gray-50">
@@ -168,25 +216,48 @@ export const MainPage = () => {
                    <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center font-pageFont text-teal-600">Say Hello!</h2>
                        <p className="mb-8 lg:mb-16 font-light text-center font-pageFont text-teal-600 sm:text-xl">Got any more questions regarding my projects? Need advice on your cooking skills? Please feel free to ask. </p>
-                       <form action="#" className="space-y-8">
+                       <form action="#" className="space-y-8 " onSubmit={formSubmissionHandler}>
                            <div>
                                <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                                    Your email
                                </label>
-                               <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                                      placeholder="name@something.com" required />
+                               <input className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                      id="email"
+                                      type="email"
+                                      placeholder="name@something.com"
+                                      onChange={emailChangedHandler}
+                                      onBlur={emailBlurHandler}
+                                      value={enteredEmail}
+                                      required
+                               />
+                               {emailInputHasError && (
+                                   <p className="text-red-500 text-xs italic mt-2 animate-bounce">If you're seeing this bounce it means that you didn't enter a valid email. Please enter one.</p>)}
                            </div>
                            <div>
                                <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-                               <input type="text" id="subject" className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="I would like to see more of your projects/Is medium rare chicken safe to eat? (No it's not!)" required />
+                               <input  className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                       type="text"
+                                       id="subject"
+                                       placeholder="I would like to see more of your projects/Is medium rare chicken safe to eat? (No it's not!)"
+                                       onChange={enteredSubjectChangedHandler}
+                                       onBlur={enteredSubjectBlurHandler}
+                                       value={enteredSubject}
+                                      required
+                               />
+                               {enteredSubjectInputHasError && (<p className="text-red-500 text-xs italic mt-2">If you consummed Medium rare chicken please go to the E.R! Also, please don't leave me blank. I get lonely.  </p>)}
                            </div>
                            <div className="sm:col-span-2">
-                               <label htmlFor="message"
-                                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
-                                   message</label>
-                               <textarea id="message"
-                                         className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                         placeholder="Leave a comment..."></textarea>
+                               <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
+                                   Your message
+                               </label>
+                               <textarea className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                         id="message"
+                                         placeholder="Leave a comment..."
+                                         onChange={enteredTextChangedHandler}
+                                         onBlur={enteredTextBlurHandler}
+                                         value={enteredText}>
+                               </textarea>
+                               {enteredTextInputHasError && (<p className="text-red-500 text-xs italic mt-2">Please leave me a message. I'm so lonely!! Just kidding...or am I?</p>)}
                            </div>
                            <button className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
                                View my code
