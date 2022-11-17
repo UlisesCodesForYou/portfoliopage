@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import {useRef} from 'react';
 import Link from 'next/link'
+import Footer from "../footer";
+
 
 export const MainPage = () => {
     const aboutMe = useRef<HTMLDivElement>(null)
@@ -17,7 +19,7 @@ export const MainPage = () => {
 
     return (
         <>
-           <div className="bg-gray-50">
+           <div className="bg-gray-50 flex flex-col h-screen justify-between">
                <section className="bg-gray-50 dark:bg-gray-50">
                    <nav className="fixed top-0 left-0 w-full py-6 bg-teal-600 z-50 font-pageFont">
                        <div className="container mx-auto flex justify-between">
@@ -33,7 +35,7 @@ export const MainPage = () => {
                                    <a className="hover:cursor-pointer"  onClick={() => scrollToSection(myResume)}>My resume</a>
                                </li>
                                <button className="bg-white rounded-full tracking-wide py-3 px-7 text-xs hover:scale-110 duration-300 hover:bg-[#F05307] hover:text-white">
-                                   <a  onClick={() => scrollToSection(contactMe)}>SAY HELLO</a>
+                                   <a onClick={() => scrollToSection(contactMe)}>SAY HELLO</a>
                                </button>
                            </ul>
                        </div>
@@ -192,7 +194,9 @@ export const MainPage = () => {
                        </form>
                    </div>
                </section>
+               <Footer />
            </div>
+
         </>
     )
 }
