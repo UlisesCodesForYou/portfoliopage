@@ -19,7 +19,7 @@ export const MainPage = () => {
         <>
            <div className="bg-gray-50">
                <section className="bg-gray-50 dark:bg-gray-50">
-                   <nav className="fixed top-0 left-0 w-full py-6 bg-teal-600">
+                   <nav className="fixed top-0 left-0 w-full py-6 bg-teal-600 z-50 font-pageFont">
                        <div className="container mx-auto flex justify-between">
                            <Image src="/Chef-hat2.png" width={50} height={50} alt="chef hat" className= "animate-bounce"/>
                            <ul className="text-sm tracking-wide items-center flex gap-x-8">
@@ -32,8 +32,8 @@ export const MainPage = () => {
                                <li className="hover:scale-125 duration-300 py-1 text-white">
                                    <a className="hover:cursor-pointer"  onClick={() => scrollToSection(myResume)}>My resume</a>
                                </li>
-                               <button className="bg-white rounded-full tracking-wide py-3 px-7 text-xs hover:scale-110 duration-300 hover:bg-[#F05307]">
-                                   <a  onClick={() => scrollToSection(myProjects)}>CONTACT ME</a>
+                               <button className="bg-white rounded-full tracking-wide py-3 px-7 text-xs hover:scale-110 duration-300 hover:bg-[#F05307] hover:text-white">
+                                   <a  onClick={() => scrollToSection(contactMe)}>SAY HELLO</a>
                                </button>
                            </ul>
                        </div>
@@ -109,6 +109,12 @@ export const MainPage = () => {
                                <p className="mt-2 text-sm font-pageFont text-teal-600">
                                    As a former chef, I thought it would be fun to finally create one. This is a static, cutlery website with functioning tabs.
                                </p>
+                               <br/>
+                               <Link href="https://github.com/UlisesCodesForYou/Cutlery-Corner-" target="_blank">
+                                   <button  className="bg-teal-600 text-white rounded-full tracking-wide py-3 px-7 font-pageFont text-md hover:scale-110 duration-300 hover:bg-[#F05307]">
+                                       View my code
+                                   </button>
+                               </Link>
                            </div>
 
                            <div className="p-10 flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b hover:bg-slate-50 cursor-pointer">
@@ -125,8 +131,12 @@ export const MainPage = () => {
                                    This app was created after going to the thrift store and finding a hidden treasure at a low price. I also wanted to share the location of the store I found it in.
                                    So, I decided to create this app to do so.
                                </p>
+                               <Link href="https://github.com/UlisesCodesForYou/thriftser-app" target="_blank">
+                                   <button className="bg-teal-600 text-white rounded-full tracking-wide py-3 px-7 font-pageFont text-md hover:scale-110 duration-300 hover:bg-[#F05307] mt-4">
+                                       View my code
+                                   </button>
+                               </Link>
                            </div>
-
                            <div className="p-10 flex flex-col items-center text-center group md:lg:xl:border-b hover:bg-slate-50 cursor-pointer">
                                <p className="text-3xl font-bold font-pageFont text-teal-600 mt-3 mb-5">
                                    GAAD Foundation
@@ -140,8 +150,46 @@ export const MainPage = () => {
                                <p className="mt-2 text-sm font-pageFont text-teal-600 ">
                                    I am currently volunteering in the reconstruction of this website.  GAAD foundtion was created he purpose of GAAD is to get everyone talking, thinking and learning about digital access and inclusion, and the more than One Billion people with disabilities/impairments.
                                </p>
+                               {/*<Link href="https://github.com/GAAD-Foundation/gaad-foundation-nextjs/pull/5" target="_blank">*/}
+                               {/*    <button className="bg-teal-600 text-white rounded-full tracking-wide py-3 px-7 font-pageFont text-md hover:scale-110 duration-300 hover:bg-[#F05307] mt-4">*/}
+                               {/*        View the code*/}
+                               {/*    </button>*/}
+                               {/*</Link>*/}
                            </div>
                        </div>
+                   </div>
+               </section>
+
+               {/*CONTACT ME SECTION*/}
+
+               <section className="bg-gray-50 dark:bg-gray-900" ref={contactMe}>
+                   <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                       <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center font-pageFont text-teal-600">Say Hello!</h2>
+                       <p className="mb-8 lg:mb-16 font-light text-center font-pageFont text-teal-600 sm:text-xl">Got any more questions regarding my projects? Need advice on your cooking skills? Please feel free to ask. </p>
+                       <form action="#" className="space-y-8">
+                           <div>
+                               <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                   Your email
+                               </label>
+                               <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                      placeholder="name@something.com" required />
+                           </div>
+                           <div>
+                               <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                               <input type="text" id="subject" className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="I would like to see more of your projects/Is medium rare chicken safe to eat? (No it's not!)" required />
+                           </div>
+                           <div className="sm:col-span-2">
+                               <label htmlFor="message"
+                                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
+                                   message</label>
+                               <textarea id="message"
+                                         className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                         placeholder="Leave a comment..."></textarea>
+                           </div>
+                           <button className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                               View my code
+                           </button>
+                       </form>
                    </div>
                </section>
            </div>
