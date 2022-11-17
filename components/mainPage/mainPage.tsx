@@ -120,12 +120,12 @@ export const MainPage = () => {
                        <div className="w-full lg:w-1/2">
                            <div className="lg:max-w-lg sm::text text-center md:text-center lg:text-left">
                                <div className="mt-8 space-y-5 ">
-                                   <h1 className="text-4xl font-medium font-pageFont text-teal-600">About me:</h1>
-                                   <p className="flex items-center -mx-2 text-teal-600 md:text font-pageFont dark:text-gray-200">
+                                   <h1 className="text-4xl font-medium font-pageFont text-[#F05307]">About me:</h1>
+                                   <p className="flex items-center -mx-2 text-[#F05307] md:text font-pageFont dark:text-gray-200">
                                        Hello once again!  My name is Ulises Orozco and I enjoy creating websites and apps.  My journey to become a web developer started back in 2017.
                                        Working in the restaurant industry took up most of my day, but I still managed to learn coding on my free time. As time progressed, I realized that I enjoyed coding even more than cooking.
                                    </p>
-                                   <p className="flex items-center -mx-2 text-teal-600 md:text font-pageFont dark:text-gray-200">
+                                   <p className="flex items-center -mx-2 text-[#F05307] md:text font-pageFont dark:text-gray-200">
                                        Fast forward to today and I have been able to complete a few sites and apps. I have also been a volunteer for the GAAD (Global Awareness Accessibility Day) Foundation in their site reconstruction.
                                    </p>
 
@@ -231,7 +231,7 @@ export const MainPage = () => {
                                       required
                                />
                                {emailInputHasError && (
-                                   <p className="text-red-500 text-xs italic mt-2 animate-bounce">If you're seeing this bounce it means that you didn't enter a valid email. Please enter one.</p>)}
+                                   <p className="text-red-500 text-xs italic mt-2 animate-bounce">If you are seeing this bounce it means that you did not enter a valid email. Please enter one.</p>)}
                            </div>
                            <div>
                                <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
@@ -244,7 +244,7 @@ export const MainPage = () => {
                                        value={enteredSubject}
                                       required
                                />
-                               {enteredSubjectInputHasError && (<p className="text-red-500 text-xs italic mt-2">If you consummed Medium rare chicken please go to the E.R! Also, please don't leave me blank. I get lonely.  </p>)}
+                               {enteredSubjectInputHasError && (<p className="text-red-500 text-xs italic mt-2">If you consummed Medium rare chicken please go to the E.R! Also, please do not leave me blank. I get lonely.  </p>)}
                            </div>
                            <div className="sm:col-span-2">
                                <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
@@ -257,12 +257,14 @@ export const MainPage = () => {
                                          onBlur={enteredTextBlurHandler}
                                          value={enteredText}>
                                </textarea>
-                               {enteredTextInputHasError && (<p className="text-red-500 text-xs italic mt-2">Please leave me a message. I'm so lonely!! Just kidding...or am I?</p>)}
+                               {enteredTextInputHasError && (<p className="text-red-500 text-xs italic mt-2">Please leave me a message. I am so lonely!! Just kidding...or am I?</p>)}
                            </div>
-                           <button className="bg-teal-600 hover:bg-[#F05307] hover:scale-110 duration-300 text-white m-auto font-bold rounded-full tracking-wide py-3 px-7 focus:outline-none disabled:opacity-60"
-                               disabled={!formIsValid}>
-                               Send
-                           </button>
+                           <div className="container text-center">
+                               <button className="bg-teal-600 hover:bg-[#F05307] hover:scale-110 duration-300 text-white m-auto font-bold rounded-full tracking-wide py-3 px-7 focus:outline-none disabled:opacity-60 sm:"
+                                       disabled={!formIsValid}>
+                                   Send
+                               </button>
+                           </div>
                        </form>
                    </div>
                </section>
