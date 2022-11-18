@@ -90,15 +90,15 @@ export const MainPage = () => {
                    </nav>
 
                    <div className="container flex flex-col-reverse mt-10 px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
-                       <div className="w-full lg:w-1/2">
-                           <div className="lg:max-w-lg">
-                               <h1 className="text-xl sm:text text-center font-bold font-pageFont text-teal-600 lg:text-4xl">
+                       <div className="w-full lg:w-1/2 ">
+                           <div className="lg:max-w-lg ">
+                               <h1 className="text-xl text-teal-600 font-bold font-pageFont sm:text text-center md:text text-center lg:text-left lg:text-4xl">
                                    {/* eslint-disable-next-line react/no-unescaped-entities */}
                                    Hi, I'm Ulises Orozco.
                                </h1>
 
                                <div className="mt-8 space-y-5 ">
-                                   <p className="flex items-center -mx-2 text-teal-600 md:text text-center font-pageFont">
+                                   <p className="-mx-2 text-teal-600 font-pageFont sm:text text-center md:text-left lg:text-left">
                                        I am a former Chef turned web developer. I design and build websites and apps. I believe that both the Culinary and Software development
                                        industries have the same root value; they both deal with providing great user/guest experiences.
                                    </p>
@@ -120,12 +120,12 @@ export const MainPage = () => {
                        <div className="w-full lg:w-1/2">
                            <div className="lg:max-w-lg sm::text text-center md:text-center lg:text-left">
                                <div className="mt-8 space-y-5 ">
-                                   <h1 className="text-4xl font-medium font-pageFont text-[#F05307]">About me:</h1>
-                                   <p className="flex items-center -mx-2 text-[#F05307] md:text font-pageFont">
+                                   <h1 className="text-xl text-teal-600 font-bold font-pageFont sm:text text-center md:text text-center lg:text-left lg:text-4xl">About me:</h1>
+                                   <p className="flex items-center -mx-2 text-teal-600 md:text font-pageFont">
                                        Hello once again!  My name is Ulises Orozco and I enjoy creating websites and apps.  My journey to become a web developer started back in 2017.
                                        Working in the restaurant industry took up most of my day, but I still managed to learn coding on my free time. As time progressed, I realized that I enjoyed coding even more than cooking.
                                    </p>
-                                   <p className="flex items-center -mx-2 text-[#F05307] md:text font-pageFont">
+                                   <p className="flex items-center -mx-2 text-teal-600 md:text font-pageFont">
                                        Fast forward to today and I have been able to complete a few sites and apps. I have also been a volunteer for the GAAD (Global Awareness Accessibility Day) Foundation in their site reconstruction.
                                    </p>
 
