@@ -142,15 +142,15 @@ export const MainPage = () => {
 
                <section className="bg-gray-50" ref={myProjects}>
                    {/*component*/}
-                   <div className="mr-6 ml-6 bg-teal-600 shadow-xl shadow-teal-200 py-10 px-20 text-center">
+                   <div className="mr-6 ml-6 bg-gray-50 py-10 px-20 text-center">
                        <p className=" text-teal-600 ">
-                           <span className="text-4xl font-medium text-white">Projects</span> <br/>
-                           <span className="text-lg text-white">Below are a few of my projects along with the technologies I used to create them.</span>
+                           <span className="text-4xl font-medium text-teal-600 mb-3">Projects:</span> <br/>
+                           <span className="text-lg text-teal-600">Below are a few of my projects along with the technologies I used to create them.</span>
                        </p>
                    </div>
-                   <div className=" px-3 md:lg:xl:px-20 border-t border-b py-20 bg-opacity-10">
-                       <div className="grid grid-cols-1 md:lg:xl:grid-cols-3 group bg-gray-50 shadow-xl shadow-neutral-100 border">
-                           <div className="p-10 flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b hover:bg-slate-50 cursor-pointer">
+                   <div className="px-3 md:lg:xl:px-20 py-20 bg-opacity-10 -mt-32">
+                       <div className="grid grid-cols-1 md:lg:xl:grid-cols-3 group bg-gray-50">
+                           <div className="p-10 flex flex-col items-center text-center group hover:bg-slate-50 cursor-pointer ">
                                <p className="text-3xl font-medium font-bold font-pageFont text-teal-600 mt-3 mb-7">
                                    Cutlery Corner
                                </p>
@@ -167,7 +167,7 @@ export const MainPage = () => {
                                </Link>
                            </div>
 
-                           <div className="p-10 flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b hover:bg-slate-50 cursor-pointer">
+                           <div className="p-10 flex flex-col items-center text-center group hover:bg-slate-50 cursor-pointer">
                                <p className="text-3xl font-bold font-pageFont text-teal-600 mt-3 mb-7">
                                    Thriftster App
                                </p>
@@ -187,7 +187,7 @@ export const MainPage = () => {
                                    </button>
                                </Link>
                            </div>
-                           <div className="p-10 flex flex-col items-center text-center group md:lg:xl:border-b hover:bg-slate-50 cursor-pointer">
+                           <div className="p-10 flex flex-col items-center text-center group hover:bg-slate-50 cursor-pointer">
                                <p className="text-3xl font-bold font-pageFont text-teal-600 mt-3 mb-5">
                                    GAAD Foundation
                                </p>
