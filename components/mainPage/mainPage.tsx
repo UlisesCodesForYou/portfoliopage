@@ -2,7 +2,7 @@ import Image from 'next/image'
 import {useRef} from 'react';
 import Link from 'next/link'
 import Footer from "../footer";
-import useInput from "../../hooks";
+import useInput from "../../hooks"; //configure imports Saul's way
 
 const isNotEmpty = (value: string) => value.trim() !== ''
 const isEmail = (value: string) => value.includes('@')
@@ -68,7 +68,7 @@ export const MainPage = () => {
         return (
         <>
            <div className="bg-gray-50 flex flex-col h-screen justify-between">
-               <section className="bg-gray-50 dark:bg-gray-50">
+               <section className="bg-gray-50">
                    <nav className="fixed top-0 left-0 w-full py-6 bg-teal-600 z-50 font-pageFont">
                        <div className="container mx-auto flex justify-between">
                            <Image src="/Chef-hat2.png" width={50} height={50} alt="chef hat" className= "animate-bounce"/>
@@ -92,7 +92,7 @@ export const MainPage = () => {
                    <div className="container flex flex-col-reverse mt-10 px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
                        <div className="w-full lg:w-1/2">
                            <div className="lg:max-w-lg">
-                               <h1 className="text-xl sm:text text-center font-bold font-pageFont text-teal-600 dark:text-white lg:text-4xl">
+                               <h1 className="text-xl sm:text text-center font-bold font-pageFont text-teal-600 lg:text-4xl">
                                    {/* eslint-disable-next-line react/no-unescaped-entities */}
                                    Hi, I'm Ulises Orozco.
                                </h1>
@@ -107,7 +107,7 @@ export const MainPage = () => {
                            </div>
                        </div>
                        <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
-                           <img className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl" src="/Portfolio-Logo.png" alt="" />
+                           <Image className="object-cover mx-auto" src="/Portfolio-Logo.png" alt="chef hat" width={600} height={600}/>
                        </div>
                    </div>
                </section>
@@ -115,17 +115,17 @@ export const MainPage = () => {
 
                {/*About me section */}
                {/*<ScrollTotTop />*/}
-               <section className="bg-gray-50 dark:bg-gray-800" ref={aboutMe}>
+               <section className="bg-gray-50" ref={aboutMe}>
                    <div className="container flex flex-col-reverse mt-10 px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
                        <div className="w-full lg:w-1/2">
                            <div className="lg:max-w-lg sm::text text-center md:text-center lg:text-left">
                                <div className="mt-8 space-y-5 ">
                                    <h1 className="text-4xl font-medium font-pageFont text-[#F05307]">About me:</h1>
-                                   <p className="flex items-center -mx-2 text-[#F05307] md:text font-pageFont dark:text-gray-200">
+                                   <p className="flex items-center -mx-2 text-[#F05307] md:text font-pageFont">
                                        Hello once again!  My name is Ulises Orozco and I enjoy creating websites and apps.  My journey to become a web developer started back in 2017.
                                        Working in the restaurant industry took up most of my day, but I still managed to learn coding on my free time. As time progressed, I realized that I enjoyed coding even more than cooking.
                                    </p>
-                                   <p className="flex items-center -mx-2 text-[#F05307] md:text font-pageFont dark:text-gray-200">
+                                   <p className="flex items-center -mx-2 text-[#F05307] md:text font-pageFont">
                                        Fast forward to today and I have been able to complete a few sites and apps. I have also been a volunteer for the GAAD (Global Awareness Accessibility Day) Foundation in their site reconstruction.
                                    </p>
 
@@ -133,14 +133,14 @@ export const MainPage = () => {
                            </div>
                        </div>
                        <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
-                           <img className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl" src="/My-photo.jpeg" alt=""/>
+                           <Image className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl" src="/My-photo.jpeg" alt="bald guy with glasses" width={500} height={500}/>
                        </div>
                    </div>
                </section>
 
                {/*My work section*/}
 
-               <section className="bg-gray-50 dark:bg-gray-800" ref={myProjects}>
+               <section className="bg-gray-50" ref={myProjects}>
                    {/*component*/}
                    <div className="mr-6 ml-6 bg-teal-600 shadow-xl shadow-teal-200 py-10 px-20 text-center">
                        <p className=" text-teal-600 ">
@@ -155,7 +155,7 @@ export const MainPage = () => {
                                    Cutlery Corner
                                </p>
                                <Image src="/Cutlery-Corner.png" width={500} height={700} alt="cutlery store" className="mb-7 transform transition-all hover:scale-125"/>
-                               <Image src="/React-logo.png" alt="/" width={90} height={90} className="mb-4"/>
+                               <Image src="/React-logo.png" alt="React logo" width={90} height={90} className="mb-4"/>
                                <p className="mt-2 text-sm font-pageFont text-teal-600">
                                    As a former chef, I thought it would be fun to finally create one. This is a static, cutlery website with functioning tabs.
                                </p>
@@ -173,9 +173,9 @@ export const MainPage = () => {
                                </p>
                                <Image src="/Thriftster-page.png" width={200} height={100} alt="cutlery store" className="mb-6 transform transition-all hover:scale-125"/>
                                <div className="flex space-x-4 mb-4">
-                                   <Image src="/NextJs-logo.png" width={100} height={100} alt="/" />
-                                   <Image src="/Typescript-logo.png" alt="/" width={60} height={30} />
-                                   <Image src="/Tailwind-logo.png" alt="/" width={60} height={30} />
+                                   <Image src="/NextJs-logo.png" width={100} height={100} alt="next js logo" />
+                                   <Image src="/Typescript-logo.png" alt="Typescript logo" width={60} height={30} />
+                                   <Image src="/Tailwind-logo.png" alt="Tailwind logo" width={60} height={30} />
                                </div>
                                <p className="mt-2 text-sm font-pageFont text-teal-600 ">
                                    This app was created after going to the thrift store and finding a hidden treasure at a low price. I also wanted to share the location of the store I found it in.
@@ -194,8 +194,8 @@ export const MainPage = () => {
                                <Image src="/GAAD-Foundation.png" width={500} height={500} alt="GAAD foundation" className="mb-6 transform transition-all hover:scale-125" />
                                <div className="flex space-x-4 mb-4">
                                    <Image src="/NextJs-logo.png" width={100} height={100} alt="/" />
-                                   <Image src="/Typescript-logo.png" alt="/" width={60} height={40} />
-                                   <Image src="/Mantine-logo.png" alt="/" width={60} height={40} />
+                                   <Image src="/Typescript-logo.png" alt="Typescript logo" width={60} height={40} />
+                                   <Image src="/Mantine-logo.png" alt="Mantine logo" width={60} height={40} />
                                </div>
                                <p className="mt-2 text-sm font-pageFont text-teal-600 ">
                                    I am currently volunteering in the reconstruction of this website.  GAAD foundtion was created he purpose of GAAD is to get everyone talking, thinking and learning about digital access and inclusion, and the more than One Billion people with disabilities/impairments.
@@ -212,16 +212,16 @@ export const MainPage = () => {
 
                {/*CONTACT ME SECTION*/}
 
-               <section className="bg-gray-50 dark:bg-gray-900" ref={contactMe}>
+               <section className="bg-gray-50" ref={contactMe}>
                    <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center font-pageFont text-teal-600">Say Hello!</h2>
                        <p className="mb-8 lg:mb-16 font-light text-center font-pageFont text-teal-600 sm:text-xl">Got any more questions regarding my projects? Need advice on your cooking skills? Please feel free to ask. </p>
                        <form action="#" className="space-y-8 " onSubmit={formSubmissionHandler}>
                            <div>
-                               <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                               <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">
                                    Your email
                                </label>
-                               <input className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                               <input className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                                       id="email"
                                       type="email"
                                       placeholder="name@something.com"
@@ -234,8 +234,8 @@ export const MainPage = () => {
                                    <p className="text-red-500 text-xs italic mt-2 animate-bounce">If you are seeing this bounce it means that you did not enter a valid email. Please enter one.</p>)}
                            </div>
                            <div>
-                               <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-                               <input  className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                               <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900">Subject</label>
+                               <input  className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
                                        type="text"
                                        id="subject"
                                        placeholder="I would like to see more of your projects/Is medium rare chicken safe to eat? (No it's not!)"
@@ -247,10 +247,10 @@ export const MainPage = () => {
                                {enteredSubjectInputHasError && (<p className="text-red-500 text-xs italic mt-2">If you consummed Medium rare chicken please go to the E.R! Also, please do not leave me blank. I get lonely.  </p>)}
                            </div>
                            <div className="sm:col-span-2">
-                               <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
+                               <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900">
                                    Your message
                                </label>
-                               <textarea className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                               <textarea className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
                                          id="message"
                                          placeholder="Leave a comment..."
                                          onChange={enteredTextChangedHandler}
