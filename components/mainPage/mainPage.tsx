@@ -89,7 +89,7 @@ export const MainPage = () => {
                        </div>
                    </nav>
 
-                   <div className="container flex flex-col-reverse mt-10 px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
+                   <div className="container flex flex-col-reverse mt-10 px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center mt-18">
                        <div className="w-full lg:w-1/2 ">
                            <div className="lg:max-w-lg ">
                                <h1 className="text-xl text-teal-600 font-bold font-pageFont sm:text text-center md:text text-center lg:text-left lg:text-4xl">
