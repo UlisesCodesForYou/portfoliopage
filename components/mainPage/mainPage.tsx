@@ -71,7 +71,7 @@ export const MainPage = () => {
                <section className="bg-gray-50">
                    <nav className="fixed top-0 left-0 w-full py-6 bg-teal-600 z-50 font-pageFont">
                        <div className="container mx-auto flex justify-between">
-                           <Image src="/Chef-hat2.png" width={50} height={50} alt="chef hat" className= "animate-bounce"/>
+                           <Image src="/Chef-hat.png" width={50} height={50} alt="chef hat" className= "animate-bounce"/>
                            <ul className="text-sm tracking-wide items-center flex gap-x-8">
                                <li className="hover:scale-125 duration-300 py-1 text-white">
                                    <a className="hover:cursor-pointer" onClick={() => scrollToSection(aboutMe)}>About me</a>
@@ -93,8 +93,7 @@ export const MainPage = () => {
                        <div className="w-full lg:w-1/2 ">
                            <div className="lg:max-w-lg ">
                                <h1 className="text-xl text-teal-600 font-bold font-pageFont sm:text text-center md:text text-center lg:text-left lg:text-4xl">
-                                   {/* eslint-disable-next-line react/no-unescaped-entities */}
-                                   Hi, I'm Ulises Orozco.
+                                   Hi, I am Ulises Orozco.
                                </h1>
 
                                <div className="mt-8 space-y-5 ">
