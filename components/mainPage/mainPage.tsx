@@ -2,7 +2,8 @@ import Image from "next/image";
 import { useRef } from "react";
 import Link from "next/link";
 import Footer from "../footer";
-import useInput from "../../hooks"; //configure imports Saul's way
+import useInput from "../../hooks";
+//configure imports Saul's way
 
 const isNotEmpty = (value: string) => value.trim() !== "";
 const isEmail = (value: string) => value.includes("@");
