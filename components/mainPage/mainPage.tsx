@@ -205,7 +205,7 @@ export const MainPage = () => {
                   width={500}
                   height={700}
                   alt="cutlery store"
-                  className="mb-7 transform transition-all hover:scale-125"
+                  className="mb-7 transform transition-all hover:scale-110"
                 />
                 <Image
                   src="/React-logo.png"
@@ -238,7 +238,7 @@ export const MainPage = () => {
                   width={200}
                   height={100}
                   alt="cutlery store"
-                  className="mb-6 transform transition-all hover:scale-125"
+                  className="mb-6 transform transition-all hover:scale-110"
                 />
                 <div className="mb-4 flex space-x-4">
                   <Image
@@ -284,7 +284,7 @@ export const MainPage = () => {
                   width={500}
                   height={500}
                   alt="GAAD foundation"
-                  className="mb-6 transform transition-all hover:scale-125"
+                  className="mb-6 transform transition-all hover:scale-110"
                 />
                 <div className="mb-4 flex space-x-4">
                   <Image
