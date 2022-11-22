@@ -116,7 +116,7 @@ export const MainPage = () => {
                 width={70}
                 height={70}
                 alt="chef hat"
-                className="animate-bounce"
+                className="sm:m ml-5 animate-bounce"
               />
               <button
                 data-collapse-toggle="navbar-default"
