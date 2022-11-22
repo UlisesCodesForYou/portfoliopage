@@ -68,44 +68,117 @@ export const MainPage = () => {
     <>
       <div className="flex h-screen flex-col justify-between bg-gray-50">
         <section className="bg-gray-50">
-          <nav className="fixed top-0 left-0 z-50 w-full bg-teal-600 py-6 font-pageFont">
-            <div className="container mx-auto flex justify-between">
+          {/*<nav className="fixed top-0 left-0 z-50 w-full bg-teal-600 py-6 font-pageFont">*/}
+          {/*  <div className="container mx-auto flex justify-between">*/}
+          {/*    <Image*/}
+          {/*      src="/Chef-hat.png"*/}
+          {/*      width={50}*/}
+          {/*      height={50}*/}
+          {/*      alt="chef hat"*/}
+          {/*      className="animate-bounce"*/}
+          {/*    />*/}
+          {/*    <ul className="flex items-center gap-x-8 text-sm tracking-wide">*/}
+          {/*      <li className="py-1 text-white duration-300 hover:scale-125">*/}
+          {/*        <a*/}
+          {/*          className="hover:cursor-pointer"*/}
+          {/*          onClick={() => scrollToSection(aboutMe)}*/}
+          {/*        >*/}
+          {/*          About me*/}
+          {/*        </a>*/}
+          {/*      </li>*/}
+          {/*      <li className="py-1 text-white duration-300 hover:scale-125">*/}
+          {/*        <a*/}
+          {/*          className="hover:cursor-pointer"*/}
+          {/*          onClick={() => scrollToSection(myProjects)}*/}
+          {/*        >*/}
+          {/*          My projects*/}
+          {/*        </a>*/}
+          {/*      </li>*/}
+          {/*      <li className="py-1 text-white duration-300 hover:scale-125">*/}
+          {/*        <a*/}
+          {/*          className="hover:cursor-pointer"*/}
+          {/*          onClick={() => scrollToSection(myResume)}*/}
+          {/*        >*/}
+          {/*          My resume*/}
+          {/*        </a>*/}
+          {/*      </li>*/}
+          {/*      <button className="rounded-full bg-white py-3 px-7 text-xs tracking-wide duration-300 hover:scale-110 hover:bg-[#F05307] hover:text-white">*/}
+          {/*        <a onClick={() => scrollToSection(contactMe)}>SAY HELLO</a>*/}
+          {/*      </button>*/}
+          {/*    </ul>*/}
+          {/*  </div>*/}
+          {/*</nav>*/}
+
+          <nav className="fixed top-0 left-0 z-50 w-full bg-teal-600 py-3 font-pageFont">
+            <div className="container mx-auto flex flex-wrap justify-between">
               <Image
                 src="/Chef-hat.png"
-                width={50}
-                height={50}
+                width={70}
+                height={70}
                 alt="chef hat"
                 className="animate-bounce"
               />
-              <ul className="flex items-center gap-x-8 text-sm tracking-wide">
-                <li className="py-1 text-white duration-300 hover:scale-125">
-                  <a
-                    className="hover:cursor-pointer"
-                    onClick={() => scrollToSection(aboutMe)}
-                  >
-                    About me
-                  </a>
-                </li>
-                <li className="py-1 text-white duration-300 hover:scale-125">
-                  <a
-                    className="hover:cursor-pointer"
-                    onClick={() => scrollToSection(myProjects)}
-                  >
-                    My projects
-                  </a>
-                </li>
-                <li className="py-1 text-white duration-300 hover:scale-125">
-                  <a
-                    className="hover:cursor-pointer"
-                    onClick={() => scrollToSection(myResume)}
-                  >
-                    My resume
-                  </a>
-                </li>
-                <button className="rounded-full bg-white py-3 px-7 text-xs tracking-wide duration-300 hover:scale-110 hover:bg-[#F05307] hover:text-white">
-                  <a onClick={() => scrollToSection(contactMe)}>SAY HELLO</a>
-                </button>
-              </ul>
+              <button
+                data-collapse-toggle="navbar-default"
+                type="button"
+                className="mr-5 ml-3 inline-flex items-center rounded-lg p-2 text-sm text-[#F05307] hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+                aria-controls="navbar-default"
+                aria-expanded="false"
+              >
+                <span className="sr-only">Open main menu</span>
+                <svg
+                  className="h-6 w-6"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                className="hidden w-full md:block md:w-auto"
+                id="navbar-default"
+              >
+                {/*  check The drop menu to see the space in the stack >*/}
+                <ul className="flex flex-col items-center gap-x-8 p-4 text-sm tracking-wide md:flex-row md:space-x-8 md:border-0 md:bg-teal-600 md:text-sm">
+                  <li className="py-1 text-white duration-300 hover:scale-125">
+                    <a
+                      className="block rounded hover:cursor-pointer"
+                      onClick={() => scrollToSection(aboutMe)}
+                    >
+                      About Me
+                    </a>
+                  </li>
+                  <li className="py-1 text-white duration-300 hover:scale-125">
+                    <a
+                      className="hover:cursor-pointer"
+                      onClick={() => scrollToSection(myProjects)}
+                    >
+                      My Projects
+                    </a>
+                  </li>
+                  <li className="py-1 text-white duration-300 hover:scale-125">
+                    <a
+                      className="block rounded hover:cursor-pointer"
+                      onClick={() => scrollToSection(myResume)}
+                    >
+                      My Resume
+                    </a>
+                  </li>
+                  <li>
+                    <button className="rounded-full bg-white py-3 px-7 text-xs tracking-wide duration-300 hover:scale-110 hover:bg-[#F05307] hover:text-white">
+                      <a onClick={() => scrollToSection(contactMe)}>
+                        SAY HELLO
+                      </a>
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </nav>
 
@@ -374,7 +447,7 @@ export const MainPage = () => {
                   className="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm"
                   type="text"
                   id="subject"
-                  placeholder="I would like to see more of your projects/Is medium rare chicken safe to eat? (No it's not!)"
+                  placeholder="Is medium rare chicken safe to eat? (No it's not!)"
                   onChange={enteredSubjectChangedHandler}
                   onBlur={enteredSubjectBlurHandler}
                   value={enteredSubject}
