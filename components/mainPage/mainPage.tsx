@@ -361,9 +361,18 @@ export const MainPage = () => {
             </p>
             <form
               action="#"
-              className="space-y-8 "
+              name="contact  v1"
+              method="post"
+              data-netlify="true"
+              className="space-y-8"
+              data-netlify-honeypot="bot-field"
               onSubmit={formSubmissionHandler}
             >
+              <div hidden>
+                <input name="bot-field" />
+              </div>
+              <input type="hidden" name="form-name" value="contact v1" />
+
               <div>
                 <label
                   htmlFor="email"
@@ -375,6 +384,7 @@ export const MainPage = () => {
                   className="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm"
                   id="email"
                   type="email"
+                  name="email"
                   placeholder="name@something.com"
                   onChange={emailChangedHandler}
                   onBlur={emailBlurHandler}
@@ -398,6 +408,7 @@ export const MainPage = () => {
                 <input
                   className="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm"
                   type="text"
+                  name="subject"
                   id="subject"
                   placeholder="Is medium rare chicken safe to eat? (No it's not!)"
                   onChange={enteredSubjectChangedHandler}
@@ -438,6 +449,7 @@ export const MainPage = () => {
                 <button
                   className="rounded-full bg-white py-3 px-7 font-bold tracking-wide text-black duration-300 hover:scale-110 hover:bg-[#F05307] hover:text-white focus:outline-none disabled:opacity-60 sm:m-auto"
                   disabled={!formIsValid}
+                  type="submit"
                 >
                   Send
                 </button>
