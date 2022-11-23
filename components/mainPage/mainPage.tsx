@@ -253,7 +253,7 @@ export const MainPage = () => {
                   href="https://github.com/UlisesCodesForYou/Cutlery-Corner-"
                   target="_blank"
                 >
-                  <button className="text-md rounded-full bg-teal-600 py-3 px-7 font-pageFont tracking-wide text-white duration-300 hover:scale-110 hover:bg-[#F05307]">
+                  <button className="text-md rounded-full bg-teal-600 py-3 px-7 font-pageFont tracking-wide text-white duration-300 hover:scale-110 hover:bg-[#F05307] xl:mt-4">
                     View my code
                   </button>
                 </Link>
@@ -300,7 +300,7 @@ export const MainPage = () => {
                   href="https://github.com/UlisesCodesForYou/thriftser-app"
                   target="_blank"
                 >
-                  <button className="text-md mt-4 rounded-full bg-teal-600 py-3 px-7 font-pageFont tracking-wide text-white duration-300 hover:scale-110 hover:bg-[#F05307]">
+                  <button className="text-md mt-4 rounded-full bg-teal-600 py-3 px-7 font-pageFont tracking-wide text-white duration-300 hover:scale-110 hover:bg-[#F05307] xl:mt-12">
                     View my code
                   </button>
                 </Link>
