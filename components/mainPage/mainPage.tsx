@@ -108,7 +108,7 @@ export const MainPage = () => {
                 id="example-navbar-danger"
               >
                 <ul className="flex list-none flex-col items-center gap-x-8 p-4 text-sm tracking-wide md:flex-row md:space-x-8 md:border-0 md:bg-teal-600 md:text-sm lg:ml-auto lg:flex-row">
-                  <li className="py-1 text-white duration-300 hover:scale-125">
+                  <li className="py-4 text-white duration-300 hover:scale-125">
                     <a
                       className="block rounded hover:cursor-pointer"
                       onClick={() => scrollToSection(aboutMe)}
@@ -116,7 +116,7 @@ export const MainPage = () => {
                       About Me
                     </a>
                   </li>
-                  <li className="py-1 text-white duration-300 hover:scale-125">
+                  <li className="py-4 text-white duration-300 hover:scale-125">
                     <a
                       className="hover:cursor-pointer"
                       onClick={() => scrollToSection(myProjects)}
@@ -124,7 +124,7 @@ export const MainPage = () => {
                       My Projects
                     </a>
                   </li>
-                  <li className="py-1 text-white duration-300 hover:scale-125">
+                  <li className="py-4 text-white duration-300 hover:scale-125">
                     <a
                       className="block rounded hover:cursor-pointer"
                       onClick={() => scrollToSection(myResume)}
@@ -132,7 +132,7 @@ export const MainPage = () => {
                       My Resume
                     </a>
                   </li>
-                  <button className="rounded-full bg-white py-3 px-7 text-xs tracking-wide duration-300 hover:scale-110 hover:bg-[#F05307] hover:text-white">
+                  <button className="rounded-full py-4 px-7 text-xs tracking-wide text-white duration-300 hover:scale-110 hover:bg-[#F05307] hover:text-white sm:bg-teal-600 md:text-white lg:bg-white lg:text-black">
                     <a onClick={() => scrollToSection(contactMe)}>SAY HELLO</a>
                   </button>
                 </ul>
