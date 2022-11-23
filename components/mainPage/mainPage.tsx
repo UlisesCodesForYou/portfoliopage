@@ -13,7 +13,6 @@ export const MainPage = () => {
   const myProjects = useRef<HTMLDivElement>(null);
   const myResume = useRef<HTMLDivElement>(null);
   const contactMe = useRef<HTMLDivElement>(null);
-  const [open, setIsOpen] = useState<boolean>(false);
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
   const scrollToSection = (elementRef: any) => {
     window.scrollTo({
@@ -132,7 +131,7 @@ export const MainPage = () => {
                       My Resume
                     </a>
                   </li>
-                  <button className="rounded-full py-4 px-7 text-xs tracking-wide text-white duration-300 hover:scale-110 hover:bg-[#F05307] hover:text-white sm:bg-teal-600 md:text-white lg:bg-white lg:text-black">
+                  <button className="rounded-full py-4 px-7 text-xs tracking-wide text-white duration-300 hover:scale-110 hover:text-white sm:bg-teal-600 md:text-white lg:bg-white lg:text-black lg:hover:bg-[#F05307]">
                     <a onClick={() => scrollToSection(contactMe)}>SAY HELLO</a>
                   </button>
                 </ul>
@@ -140,7 +139,7 @@ export const MainPage = () => {
             </div>
           </nav>
 
-          <div className="mt-18 container mx-auto mt-10 flex flex-col-reverse space-y-6 px-6 py-10 lg:h-[32rem] lg:flex-row lg:items-center lg:py-16">
+          <div className="mt-18 container mx-auto mt-10 flex flex-col-reverse space-y-6 px-6 py-10 lg:h-[32rem] lg:flex-row lg:items-center lg:py-16 ">
             <div className="w-full lg:w-1/2 ">
               <div className="lg:max-w-lg ">
                 <h1 className="sm:text md:text text-center text-center font-pageFont text-xl font-bold text-teal-600 lg:text-left lg:text-4xl">
@@ -211,7 +210,7 @@ export const MainPage = () => {
 
         {/*My work section*/}
 
-        <section className="bg-teal-600" ref={myProjects}>
+        <section className="bg-gradient-to-b from-teal-600" ref={myProjects}>
           {/*component*/}
           <div className="mr-6 ml-6 py-10 px-20 text-center">
             <p className=" text-teal-600 ">
@@ -344,11 +343,6 @@ export const MainPage = () => {
                   access and inclusion, and the more than One Billion people
                   with disabilities/impairments.
                 </p>
-                {/*<Link href="https://github.com/GAAD-Foundation/gaad-foundation-nextjs/pull/5" target="_blank">*/}
-                {/*    <button className="bg-teal-600 text-white rounded-full tracking-wide py-3 px-7 font-pageFont text-md hover:scale-110 duration-300 hover:bg-[#F05307] mt-4">*/}
-                {/*        View the code*/}
-                {/*    </button>*/}
-                {/*</Link>*/}
               </div>
             </div>
           </div>
@@ -356,12 +350,12 @@ export const MainPage = () => {
 
         {/*CONTACT ME SECTION*/}
 
-        <section className="bg-gradient-to-b from-teal-600" ref={contactMe}>
+        <section className="bg-gradient-to-t from-teal-600" ref={contactMe}>
           <div className="mx-auto max-w-screen-md py-8 px-4 lg:py-16">
-            <h2 className="mb-4 text-center font-pageFont text-4xl font-extrabold tracking-tight text-white">
+            <h2 className="mb-4 text-center font-pageFont text-4xl font-extrabold tracking-tight text-teal-600">
               Say Hello!
             </h2>
-            <p className="mb-8 text-center font-pageFont font-light text-white sm:text-xl lg:mb-16">
+            <p className="mb-8 text-center font-pageFont font-light text-teal-600 sm:text-xl lg:mb-16">
               Got any more questions regarding my projects? Need advice on your
               cooking skills? Please feel free to ask.{" "}
             </p>

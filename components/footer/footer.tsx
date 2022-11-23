@@ -3,7 +3,7 @@ import Link from "next/link";
 export const Footer = () => {
   return (
     <>
-      <footer className="bg-gradient-to-t from-[#F05307] text-center text-white">
+      <footer className="bg-teal-600 text-center text-white">
         <div className="p-4 text-center">
           <Link
             href="https://github.com/UlisesCodesForYou/portfoliopage"

@@ -6,9 +6,13 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      pageFont: ['Source Code Pro']
+      pageFont: ["Source Code Pro"],
     },
-
-},
+  },
   plugins: [],
-}
+};
+
+// Remove the bg thing if the text goes away.
+// backgroundImage: {
+//   "layered-waves": "url('../public/blurry-gradient3.png')",
+// },
