@@ -360,7 +360,6 @@ export const MainPage = () => {
               cooking skills? Please feel free to ask.{" "}
             </p>
             <form
-              action="#"
               name="contact  v1"
               method="post"
               data-netlify="true"
