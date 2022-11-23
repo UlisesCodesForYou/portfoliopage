@@ -310,7 +310,7 @@ export const MainPage = () => {
                   GAAD Foundation
                 </p>
                 <Image
-                  src="/GAAD-Foundation.png"
+                  src="/GAAD-Grid.png"
                   width={500}
                   height={500}
                   alt="GAAD foundation"
