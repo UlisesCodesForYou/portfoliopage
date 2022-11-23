@@ -238,7 +238,7 @@ export const MainPage = () => {
                   className="mb-7 transform transition-all hover:scale-110"
                 />
                 <Image
-                  src="/React-logo.png"
+                  src="/React3.png"
                   alt="React logo"
                   width={90}
                   height={90}
