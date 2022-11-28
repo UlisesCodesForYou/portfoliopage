@@ -392,7 +392,7 @@ export const MainPage = () => {
                   required
                 />
                 {emailInputHasError && (
-                  <p className="mt-2 animate-bounce text-xs italic text-red-500">
+                  <p className="mt-2 animate-bounce text-xs italic text-red-800">
                     If you are seeing this bounce it means that you did not
                     enter a valid email. Please enter one.
                   </p>
@@ -417,7 +417,7 @@ export const MainPage = () => {
                   required
                 />
                 {enteredSubjectInputHasError && (
-                  <p className="mt-2 text-xs italic text-red-500">
+                  <p className="mt-2 text-xs italic text-red-800">
                     If you consummed Medium rare chicken please go to the E.R!
                     Also, please do not leave me blank. I get lonely.{" "}
                   </p>
@@ -441,7 +441,7 @@ export const MainPage = () => {
                   required
                 ></textarea>
                 {enteredTextInputHasError && (
-                  <p className="mt-2 text-xs italic text-red-500">
+                  <p className="mt-2 text-xs italic text-red-800">
                     Please leave me a message. I am so lonely!! Just
                     kidding...or am I?
                   </p>
