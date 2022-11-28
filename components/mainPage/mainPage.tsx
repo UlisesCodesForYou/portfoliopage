@@ -68,6 +68,7 @@ export const MainPage = () => {
     <>
       <div className="flex h-screen flex-col justify-between bg-gray-50">
         <section className="bg-gray-50">
+          {/*##### NAV BAR ######*/}
           <nav className="fixed top-0 left-0 z-50 mb-3 flex w-full flex-wrap items-center justify-between bg-teal-600 py-3 py-3 px-2 font-pageFont">
             <div className="container mx-auto flex flex-wrap justify-between px-4">
               <div className="relative flex w-full justify-between lg:static lg:block lg:w-auto lg:justify-start">
@@ -138,6 +139,7 @@ export const MainPage = () => {
               </div>
             </div>
           </nav>
+          {/*####### END OF NAV BAR ######*/}
 
           <div className="mt-18 container mx-auto mt-10 flex flex-col-reverse space-y-6 px-6 py-10 lg:h-[32rem] lg:flex-row lg:items-center lg:py-16 ">
             <div className="w-full lg:w-1/2 ">
@@ -157,9 +159,9 @@ export const MainPage = () => {
                 </div>
               </div>
             </div>
-            <div className="flex h-96 w-full items-center justify-center lg:w-1/2">
+            <div className="flex h-96 w-full items-center justify-center lg:w-1/2 ">
               <Image
-                className="mx-auto object-cover"
+                className="mx-auto object-cover xl:mt-10 2xl:mt-10"
                 src="/Portfolio-Logo.png"
                 alt="chef hat"
                 width={600}
