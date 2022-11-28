@@ -365,7 +365,6 @@ export const MainPage = () => {
               data-netlify="true"
               className="space-y-8"
               data-netlify-honeypot="bot-field"
-              onSubmit={formSubmissionHandler}
             >
               <div hidden>
                 <input name="bot-field" />
@@ -432,10 +431,12 @@ export const MainPage = () => {
                 <textarea
                   className="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm"
                   id="message"
+                  name="message"
                   placeholder="Leave a comment..."
                   onChange={enteredTextChangedHandler}
                   onBlur={enteredTextBlurHandler}
                   value={enteredText}
+                  required
                 ></textarea>
                 {enteredTextInputHasError && (
                   <p className="mt-2 text-xs italic text-red-500">
@@ -448,6 +449,7 @@ export const MainPage = () => {
                 <button
                   className="rounded-full bg-white py-3 px-7 font-bold tracking-wide text-black duration-300 hover:scale-110 hover:bg-[#F05307] hover:text-white focus:outline-none disabled:opacity-60 sm:m-auto"
                   disabled={!formIsValid}
+                  onSubmit={formSubmissionHandler}
                   type="submit"
                 >
                   Send
