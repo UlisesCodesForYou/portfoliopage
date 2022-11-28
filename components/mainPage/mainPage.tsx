@@ -449,7 +449,7 @@ export const MainPage = () => {
               </div>
               <div className="container text-center">
                 <button
-                  className="rounded-full bg-white py-3 px-7 font-bold tracking-wide text-black duration-300 hover:scale-110 hover:bg-[#F05307] hover:text-white focus:outline-none disabled:opacity-60 sm:m-auto"
+                  className="cursor-pointer rounded-full bg-white py-3 px-7 font-bold tracking-wide text-black duration-300 hover:scale-110 hover:bg-[#F05307] hover:text-white focus:outline-none disabled:opacity-60 sm:m-auto"
                   disabled={!formIsValid}
                   onSubmit={formSubmissionHandler}
                   type="submit"
