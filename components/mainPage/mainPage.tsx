@@ -210,8 +210,9 @@ export const MainPage = () => {
           </div>
         </section>
 
-        {/*My work section*/}
+        {/*##### MY RESUME SECTION ######*/}
 
+        {/* ###### MY PROJECTS SECTION ######*/}
         <section className="bg-gradient-to-b from-teal-600" ref={myProjects}>
           {/*component*/}
           <div className="mr-6 ml-6 py-10 px-20 text-center">
@@ -351,7 +352,6 @@ export const MainPage = () => {
         </section>
 
         {/*CONTACT ME SECTION*/}
-
         <section className="bg-gradient-to-t from-teal-600" ref={contactMe}>
           <div className="mx-auto max-w-screen-md py-8 px-4 lg:py-16">
             <h2 className="mb-4 text-center font-pageFont text-4xl font-extrabold tracking-tight text-teal-600">
