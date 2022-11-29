@@ -118,18 +118,18 @@ export const MainPage = () => {
                   </li>
                   <li className="py-4 text-white duration-300 hover:scale-125">
                     <a
-                      className="hover:cursor-pointer"
-                      onClick={() => scrollToSection(myProjects)}
-                    >
-                      My Projects
-                    </a>
-                  </li>
-                  <li className="py-4 text-white duration-300 hover:scale-125">
-                    <a
                       className="block rounded hover:cursor-pointer"
                       onClick={() => scrollToSection(myResume)}
                     >
                       My Resume
+                    </a>
+                  </li>
+                  <li className="py-4 text-white duration-300 hover:scale-125">
+                    <a
+                      className="hover:cursor-pointer"
+                      onClick={() => scrollToSection(myProjects)}
+                    >
+                      My Projects
                     </a>
                   </li>
                   <button className="rounded-full py-4 px-7 text-sm tracking-wide text-white duration-300 hover:scale-110 hover:text-white sm:bg-teal-600 md:text-white lg:bg-white lg:text-black lg:hover:bg-[#F05307]">
@@ -211,6 +211,36 @@ export const MainPage = () => {
         </section>
 
         {/*##### MY RESUME SECTION ######*/}
+        {/*<section className="mr-6 ml-6 bg-teal-600 py-10 px-20 text-center">*/}
+        {/*  <p className=" text-teal-600 ">*/}
+        {/*    <span className="mb-3 text-4xl font-medium text-white">*/}
+        {/*      My Resume*/}
+        {/*    </span>{" "}*/}
+        {/*  </p>*/}
+        {/*  <div className="bg-teal-600 pt-24 pb-24">*/}
+        {/*    <Image*/}
+        {/*      src="/Resume2.png"*/}
+        {/*      width={500}*/}
+        {/*      height={500}*/}
+        {/*      alt="Resume"*/}
+        {/*      className="m-auto transform transition-all hover:scale-125 "*/}
+        {/*    />*/}
+        {/*  </div>*/}
+        {/*</section>*/}
+        <div
+          className="m-auto w-full bg-teal-600 py-10 text-center"
+          ref={myResume}
+        >
+          <p className=" text-teal-600 ">
+            <span className="mb-3 text-4xl font-medium text-white">
+              My Resume
+            </span>{" "}
+            <br />
+            <span className="text-2xl text-teal-600 text-white">
+              Please feel free to contact me to request a copy of my resume.
+            </span>
+          </p>
+        </div>
 
         {/* ###### MY PROJECTS SECTION ######*/}
         <section className="bg-gradient-to-b from-teal-600" ref={myProjects}>
