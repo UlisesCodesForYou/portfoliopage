@@ -270,9 +270,9 @@ export const MainPage = () => {
                 <Image
                   src="/Cutlery-Corner.png"
                   width={500}
-                  height={700}
+                  height={800}
                   alt="cutlery store"
-                  className="mb-7 transform transition-all hover:scale-110"
+                  className="mb-7 h-5/6 transform transition-all hover:scale-110"
                 />
                 <Image
                   src="/React3.png"
@@ -303,9 +303,9 @@ export const MainPage = () => {
                 <Image
                   src="/Thriftster-page.png"
                   width={200}
-                  height={100}
+                  height={300}
                   alt="cutlery store"
-                  className="mb-6 transform transition-all hover:scale-110"
+                  className="mb-6 w-8/12 transform transition-all hover:scale-110"
                 />
                 <div className="mb-4 flex space-x-4">
                   <Image
@@ -348,10 +348,10 @@ export const MainPage = () => {
                 </p>
                 <Image
                   src="/GAAD-Grid.png"
-                  width={500}
+                  width={600}
                   height={500}
                   alt="GAAD foundation"
-                  className="mb-6 transform transition-all hover:scale-110"
+                  className="mb-6 h-3/6 w-fit transform transition-all hover:scale-110"
                 />
                 <div className="mb-4 flex space-x-4">
                   <Image
