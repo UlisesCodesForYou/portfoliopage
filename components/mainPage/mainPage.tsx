@@ -181,19 +181,23 @@ export const MainPage = () => {
                   <h1 className="sm:text md:text text-center text-center font-pageFont text-xl font-bold text-white lg:text-left lg:text-4xl">
                     About me:
                   </h1>
-                  <p className="md:text -mx-2 flex items-center font-pageFont text-white">
+                  <p className="md:text text-md -mx-2 flex items-center font-pageFont text-white">
                     Hello once again! My name is Ulises Orozco and I enjoy
-                    creating websites and apps. My journey to become a web
-                    developer started back in 2017. Working in the restaurant
-                    industry took up most of my day, but I still managed to
-                    learn coding on my free time. As time progressed, I realized
-                    that I enjoyed coding even more than cooking.
+                    cooking up websites and apps. My journey to become a web
+                    developer started back in 2017. While working full-time in
+                    the restaurant industry, I was informed about the
+                    similarities between coding and cooking. As time progressed,
+                    and when time allowed, I came to appreciate the correlation
+                    between both; the goal of providing a great user/guest
+                    experience. As time went on, I began to see each language
+                    and its properties as ingredients; allowing me more creative
+                    freedom.
                   </p>
-                  <p className="md:text -mx-2 flex items-center font-pageFont text-white">
-                    Fast forward to today and I have been able to complete a few
-                    sites and apps. I have also been a volunteer for the GAAD
-                    (Global Awareness Accessibility Day) Foundation in their
-                    site reconstruction.
+                  <p className="md:text text-md -mx-2 flex items-center font-pageFont text-white">
+                    Fast-forward to today, and I have completed a few websites
+                    and apps. I have also been a volunteer for the GAAD (Global
+                    Awareness Accessibility Day) Foundation in their site
+                    reconstruction.
                   </p>
                 </div>
               </div>
