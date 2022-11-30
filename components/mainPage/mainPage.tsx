@@ -129,7 +129,7 @@ export const MainPage = () => {
                       className="block rounded hover:cursor-pointer"
                       onClick={() => scrollToSection(myResume)}
                     >
-                      My Resume:
+                      My Resume
                     </a>
                   </li>
                   <button className="rounded-full py-4 px-7 text-sm tracking-wide text-white duration-300 hover:scale-110 hover:text-white sm:bg-teal-600 md:text-white lg:bg-white lg:text-black lg:hover:bg-[#F05307]">
@@ -380,7 +380,7 @@ export const MainPage = () => {
         >
           <p className="">
             <span className="mb-3 text-4xl font-medium text-teal-600">
-              My Resume
+              My Resume:
             </span>{" "}
             <br />
             <span className="mt-8 text-2xl text-teal-600 text-teal-600">
