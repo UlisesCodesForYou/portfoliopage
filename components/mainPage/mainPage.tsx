@@ -118,18 +118,18 @@ export const MainPage = () => {
                   </li>
                   <li className="py-4 text-white duration-300 hover:scale-125">
                     <a
-                      className="block rounded hover:cursor-pointer"
-                      onClick={() => scrollToSection(myResume)}
-                    >
-                      My Resume
-                    </a>
-                  </li>
-                  <li className="py-4 text-white duration-300 hover:scale-125">
-                    <a
                       className="hover:cursor-pointer"
                       onClick={() => scrollToSection(myProjects)}
                     >
                       My Projects
+                    </a>
+                  </li>
+                  <li className="py-4 text-white duration-300 hover:scale-125">
+                    <a
+                      className="block rounded hover:cursor-pointer"
+                      onClick={() => scrollToSection(myResume)}
+                    >
+                      My Resume:
                     </a>
                   </li>
                   <button className="rounded-full py-4 px-7 text-sm tracking-wide text-white duration-300 hover:scale-110 hover:text-white sm:bg-teal-600 md:text-white lg:bg-white lg:text-black lg:hover:bg-[#F05307]">
@@ -174,13 +174,17 @@ export const MainPage = () => {
         {/*About me section */}
         {/*<ScrollTotTop />*/}
         <section className="bg-gradient-to-t from-teal-600" ref={aboutMe}>
-          <div className="container mx-auto mt-10 flex flex-col-reverse space-y-6 px-6 py-10 lg:h-[32rem] lg:flex-row lg:items-center lg:py-16">
+          <div className="mr-6 ml-6 text-center">
+            <p className=" text-teal-600 ">
+              <span className="mb-3 text-4xl font-medium text-teal-600">
+                About Me:
+              </span>{" "}
+            </p>
+          </div>
+          <div className="container mx-auto -mt-2 flex flex-col-reverse space-y-6 px-6 py-10 lg:h-[32rem] lg:flex-row lg:items-center lg:py-16">
             <div className="w-full lg:w-1/2">
               <div className="sm::text text-center md:text-center lg:max-w-lg lg:text-left">
                 <div className="mt-8 space-y-5 ">
-                  <h1 className="sm:text md:text text-center text-center font-pageFont text-xl font-bold text-white lg:text-left lg:text-4xl">
-                    About me:
-                  </h1>
                   <p className="md:text text-md -mx-2 flex items-center font-pageFont text-white">
                     Hello once again! My name is Ulises Orozco and I enjoy
                     cooking up websites and apps. My journey to become a web
@@ -231,20 +235,6 @@ export const MainPage = () => {
         {/*    />*/}
         {/*  </div>*/}
         {/*</section>*/}
-        <div
-          className="m-auto w-full bg-teal-600 py-10 text-center"
-          ref={myResume}
-        >
-          <p className=" text-teal-600 ">
-            <span className="mb-3 text-4xl font-medium text-white">
-              My Resume
-            </span>{" "}
-            <br />
-            <span className="text-2xl text-teal-600 text-white">
-              Please feel free to contact me to request a copy of my resume.
-            </span>
-          </p>
-        </div>
 
         {/* ###### MY PROJECTS SECTION ######*/}
         <section className="bg-gradient-to-b from-teal-600" ref={myProjects}>
@@ -384,6 +374,25 @@ export const MainPage = () => {
             </div>
           </div>
         </section>
+        <div
+          className="m-auto h-72 w-full bg-white py-10 text-center"
+          ref={myResume}
+        >
+          <p className="">
+            <span className="mb-3 text-4xl font-medium text-teal-600">
+              My Resume
+            </span>{" "}
+            <br />
+            <span className="mt-8 text-2xl text-teal-600 text-teal-600">
+              Please feel free to contact me to request a copy of my resume.
+            </span>
+          </p>
+          {/*<p>These are some of the skills I possess</p>*/}
+          {/*<ul>*/}
+          {/*  <li>React Js</li>*/}
+          {/*  <li>Node </li>*/}
+          {/*</ul>*/}
+        </div>
 
         {/*CONTACT ME SECTION*/}
         <section className="bg-gradient-to-t from-teal-600" ref={contactMe}>
