@@ -7,12 +7,12 @@ export const MyProjects = () => {
       <section className="bg-gradient-to-b from-teal-600" id="myProjects">
         {/*component*/}
         <div className="mr-6 ml-6 py-10 px-20 text-center">
-          <p className=" text-teal-600 ">
+          <p className="text-teal-600 ">
             <span className="mb-3 text-4xl font-medium text-white">
               Projects:
             </span>{" "}
             <br />
-            <span className="text-lg text-teal-600 text-white">
+            <span className="mt-2 font-pageFont text-lg text-white">
               Below are a few of my projects along with the technologies I used
               to create them.
             </span>
@@ -29,7 +29,7 @@ export const MyProjects = () => {
                 width={500}
                 height={800}
                 alt="cutlery store"
-                className="mb-7 h-5/6 transform transition-all hover:scale-110"
+                className="mb-7 transform transition-all hover:scale-110"
               />
               <Image
                 src="/React3.png"
@@ -62,7 +62,7 @@ export const MyProjects = () => {
                 width={200}
                 height={300}
                 alt="cutlery store"
-                className="mb-6 w-8/12 transform transition-all hover:scale-110"
+                className="mb-6 transform transition-all hover:scale-110"
               />
               <div className="mb-4 flex space-x-4">
                 <Image
@@ -108,7 +108,7 @@ export const MyProjects = () => {
                 width={600}
                 height={500}
                 alt="GAAD foundation"
-                className="mb-6 h-3/6 w-fit transform transition-all hover:scale-110"
+                className="mb-6 transform transition-all hover:scale-110"
               />
               <div className="mb-4 flex space-x-4">
                 <Image
