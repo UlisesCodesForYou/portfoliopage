@@ -19,7 +19,10 @@ export const MyResume = () => {
       {/*  </div>*/}
       {/*</section>*/}
 
-      <div className="m-auto h-72 w-full bg-white py-10 text-center">
+      <div
+        className="m-auto h-72 w-full bg-white py-10 text-center"
+        id="resume"
+      >
         <p className="">
           <span className="mb-3 text-4xl font-medium text-teal-600">
             My Resume:

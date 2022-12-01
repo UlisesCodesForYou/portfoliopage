@@ -5,7 +5,7 @@ export const AboutMe = () => {
     <>
       {/*About me section */}
       {/*<ScrollTotTop />*/}
-      <section className="bg-gradient-to-t from-teal-600">
+      <section className="bg-gradient-to-t from-teal-600" id="aboutMe">
         <div className="mr-6 ml-6 text-center">
           <p className=" text-teal-600 ">
             <span className="mb-3 text-4xl font-medium text-teal-600">

@@ -1,19 +1,10 @@
 import Image from "next/image";
-import { useRef, useState } from "react";
+import Link from "next/link";
+import { useState } from "react";
 
 export const NavBar = () => {
-  const aboutMe = useRef<HTMLDivElement>(null);
-  const myProjects = useRef<HTMLDivElement>(null);
-  const myResume = useRef<HTMLDivElement>(null);
-  const contactMe = useRef<HTMLDivElement>(null);
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
 
-  const scrollToSection = (elementRef: any) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: "smooth",
-    });
-  };
   return (
     <nav className="fixed top-0 left-0 z-50 mb-3 flex w-full flex-wrap items-center justify-between bg-teal-600 py-3 py-3 px-2 font-pageFont">
       <div className="container mx-auto flex flex-wrap justify-between px-4">
@@ -55,31 +46,28 @@ export const NavBar = () => {
         >
           <ul className="flex list-none flex-col items-center gap-x-8 p-4 tracking-wide md:flex-row md:space-x-8 md:border-0 md:bg-teal-600 md:text-lg lg:ml-auto lg:flex-row lg:text-lg">
             <li className="py-4 text-white duration-300 hover:scale-125">
-              <a
+              <Link
                 className="block rounded hover:cursor-pointer"
-                onClick={() => scrollToSection(aboutMe)}
+                href="/#aboutMe"
               >
                 About Me
-              </a>
+              </Link>
             </li>
             <li className="py-4 text-white duration-300 hover:scale-125">
-              <a
-                className="hover:cursor-pointer"
-                onClick={() => scrollToSection(myProjects)}
-              >
+              <Link className="hover:cursor-pointer" href="/#myProjects">
                 My Projects
-              </a>
+              </Link>
             </li>
             <li className="py-4 text-white duration-300 hover:scale-125">
-              <a
+              <Link
                 className="block rounded hover:cursor-pointer"
-                onClick={() => scrollToSection(myResume)}
+                href="/#myResume"
               >
                 My Resume
-              </a>
+              </Link>
             </li>
             <button className="rounded-full py-4 px-7 text-sm tracking-wide text-white duration-300 hover:scale-110 hover:text-white sm:bg-teal-600 md:text-white lg:bg-white lg:text-black lg:hover:bg-[#F05307]">
-              <a onClick={() => scrollToSection(contactMe)}>SAY HELLO</a>
+              <Link href="/#sayHello">SAY HELLO</Link>
             </button>
           </ul>
         </div>

@@ -9,22 +9,12 @@ import MyResume from "@components/myResume";
 export const MainPage = () => {
   return (
     <div className="flex h-screen flex-col justify-between bg-gray-50">
-      <div>
-        <NavBar />
-      </div>
+      <NavBar />
       <Hero />
-      <div id="aboutMe">
-        <AboutMe />
-      </div>
-      <div id="myProjects">
-        <MyProjects />
-      </div>
-      <div id="myResume">
-        <MyResume />
-      </div>
-      <div id="sayHello">
-        <ContactForm />
-      </div>
+      <AboutMe />
+      <MyProjects />
+      <MyResume />
+      <ContactForm />
       <Footer />
     </div>
   );
