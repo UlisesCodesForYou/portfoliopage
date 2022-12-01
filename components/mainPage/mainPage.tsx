@@ -17,9 +17,6 @@ export const MainPage = () => {
         <AboutMe />
         <MyProjects />
         <MyResume />
-
-        {/*<ScrollTotTop />*/}
-
         <ContactForm />
         <Footer />
       </div>
