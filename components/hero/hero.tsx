@@ -3,7 +3,10 @@ import Image from "next/image";
 export const Hero = () => {
   return (
     <>
-      <div className="mt-18 container mx-auto mt-10 flex flex-col-reverse space-y-6 px-6 py-10 lg:h-[32rem] lg:flex-row lg:items-center lg:py-16 ">
+      <div
+        className="mt-18 container mx-auto mt-10 flex flex-col-reverse space-y-6 px-6 py-10 lg:h-[32rem] lg:flex-row lg:items-center lg:py-16 "
+        id="home"
+      >
         <div className="w-full lg:w-1/2 ">
           <div className="lg:max-w-lg ">
             <h1 className="sm:text md:text text-center text-center font-pageFont text-xl font-bold text-teal-600 lg:text-left lg:text-4xl">

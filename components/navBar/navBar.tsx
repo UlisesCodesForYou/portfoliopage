@@ -49,6 +49,18 @@ export const NavBar = () => {
             <li className="py-4 text-white duration-300 hover:scale-125">
               <Link
                 className="outline-offset- block rounded hover:cursor-pointer"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-150}
+                duration={100}
+              >
+                Home
+              </Link>
+            </li>
+            <li className="py-4 text-white duration-300 hover:scale-125">
+              <Link
+                className="outline-offset- block rounded hover:cursor-pointer"
                 to="aboutMe"
                 spy={true}
                 smooth={true}
