@@ -1,5 +1,4 @@
 import Image from "next/image";
-// import Link from "next/link";
 import { Link } from "react-scroll/modules";
 import { useState } from "react";
 
@@ -91,7 +90,7 @@ export const NavBar = () => {
                 offset={-100}
                 duration={100}
               >
-                My Resume
+                My Skills
               </Link>
             </li>
             <button className="rounded-full py-4 px-7 text-sm tracking-wide text-white duration-300 hover:scale-110 hover:text-white sm:bg-teal-600 md:text-white lg:bg-white lg:text-black lg:hover:bg-[#F05307]">

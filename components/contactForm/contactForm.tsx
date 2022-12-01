@@ -53,7 +53,10 @@ export const ContactForm = () => {
   };
 
   return (
-    <section className="bg-gradient-to-t from-teal-600" id="sayHello">
+    <section
+      className="sm:m mt-6 bg-gradient-to-t from-teal-600 lg:mt-2"
+      id="sayHello"
+    >
       <div className="mx-auto max-w-screen-md py-8 px-4 lg:py-16">
         <h2 className="mb-4 text-center font-pageFont text-4xl font-extrabold tracking-tight text-teal-600">
           Say Hello!

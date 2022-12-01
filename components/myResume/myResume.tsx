@@ -1,42 +1,37 @@
 export const MyResume = () => {
   return (
     <>
-      {/*##### MY RESUME SECTION ######*/}
-      {/*<section className="mr-6 ml-6 bg-teal-600 py-10 px-20 text-center">*/}
-      {/*  <p className=" text-teal-600 ">*/}
-      {/*    <span className="mb-3 text-4xl font-medium text-white">*/}
-      {/*      My Resume*/}
-      {/*    </span>{" "}*/}
-      {/*  </p>*/}
-      {/*  <div className="bg-teal-600 pt-24 pb-24">*/}
-      {/*    <Image*/}
-      {/*      src="/Resume2.png"*/}
-      {/*      width={500}*/}
-      {/*      height={500}*/}
-      {/*      alt="Resume"*/}
-      {/*      className="m-auto transform transition-all hover:scale-125 "*/}
-      {/*    />*/}
-      {/*  </div>*/}
-      {/*</section>*/}
-
       <div
         className="m-auto h-72 w-full bg-white py-10 text-center"
         id="myResume"
       >
         <p className="">
           <span className="mb-3 text-4xl font-medium text-teal-600">
-            My Resume:
+            Key Skills:
           </span>{" "}
           <br />
-          <span className="mt-8 text-2xl text-teal-600 text-teal-600">
-            Please feel free to contact me to request a copy of my resume.
+          <span className="mt-10 text-2xl text-teal-600 text-teal-600">
+            Please feel free to contact me if you would like to see my complete
+            skill set and Resume.
           </span>
         </p>
-        {/*<p>These are some of the skills I possess</p>*/}
-        {/*<ul>*/}
-        {/*  <li>React Js</li>*/}
-        {/*  <li>Node </li>*/}
-        {/*</ul>*/}
+
+        <ul className="mt-5 mb-3 grid grid-cols-2 sm:grid-cols-2">
+          <div className="group list-disc flex-col font-pageFont text-teal-600 ">
+            <li>React</li>
+            <li>React Router</li>
+            <li>React Redux</li>
+            <li>TypeScript</li>
+            <li>Tailwind CSS</li>
+          </div>
+          <div className="group flex-col items-center font-pageFont text-teal-600">
+            <li>NextJS</li>
+            <li>MirageJs</li>
+            <li>UI Design</li>
+            <li>HTML5</li>
+            <li>Javascript(ES6)</li>
+          </div>
+        </ul>
       </div>
     </>
   );
