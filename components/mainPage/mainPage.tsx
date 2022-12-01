@@ -5,6 +5,7 @@ import NavBar from "../navBar";
 import ContactForm from "../contactForm";
 import AboutMe from "../aboutMe";
 import Hero from "../hero";
+import MyProjects from "../myProjects";
 //configure imports Saul's way
 
 export const MainPage = () => {
@@ -15,8 +16,7 @@ export const MainPage = () => {
         <NavBar />
         <Hero />
         <AboutMe />
-
-        {/*About me section */}
+        <MyProjects />
 
         {/*<ScrollTotTop />*/}
 
@@ -38,144 +38,6 @@ export const MainPage = () => {
         {/*  </div>*/}
         {/*</section>*/}
 
-        {/* ###### MY PROJECTS SECTION ######*/}
-        <section className="bg-gradient-to-b from-teal-600">
-          {/*component*/}
-          <div className="mr-6 ml-6 py-10 px-20 text-center">
-            <p className=" text-teal-600 ">
-              <span className="mb-3 text-4xl font-medium text-white">
-                Projects:
-              </span>{" "}
-              <br />
-              <span className="text-lg text-teal-600 text-white">
-                Below are a few of my projects along with the technologies I
-                used to create them.
-              </span>
-            </p>
-          </div>
-          <div className="-mt-24 bg-opacity-10 px-3 py-20 md:lg:xl:px-20">
-            <div className="group grid grid-cols-1 bg-gray-50 md:lg:xl:grid-cols-3">
-              <div className="group flex cursor-pointer flex-col items-center p-10 text-center hover:bg-slate-50 ">
-                <p className="mt-3 mb-7 font-pageFont text-3xl font-medium font-bold text-teal-600">
-                  Cutlery Corner
-                </p>
-                <Image
-                  src="/Cutlery-Corner.png"
-                  width={500}
-                  height={800}
-                  alt="cutlery store"
-                  className="mb-7 h-5/6 transform transition-all hover:scale-110"
-                />
-                <Image
-                  src="/React3.png"
-                  alt="React logo"
-                  width={90}
-                  height={90}
-                  className="mb-4"
-                />
-                <p className="mt-2 font-pageFont text-sm text-teal-600">
-                  As a former chef, I thought it would be fun to finally create
-                  one. This is a static, cutlery website with functioning tabs.
-                </p>
-                <br />
-                <Link
-                  href="https://github.com/UlisesCodesForYou/Cutlery-Corner-"
-                  target="_blank"
-                >
-                  <button className="text-md rounded-full bg-teal-600 py-3 px-7 font-pageFont tracking-wide text-white duration-300 hover:scale-110 hover:bg-[#F05307] xl:mt-4">
-                    View my code
-                  </button>
-                </Link>
-              </div>
-
-              <div className="group flex cursor-pointer flex-col items-center p-10 text-center hover:bg-slate-50">
-                <p className="mt-3 mb-7 font-pageFont text-3xl font-bold text-teal-600">
-                  Thriftster App
-                </p>
-                <Image
-                  src="/Thriftster-page.png"
-                  width={200}
-                  height={300}
-                  alt="cutlery store"
-                  className="mb-6 w-8/12 transform transition-all hover:scale-110"
-                />
-                <div className="mb-4 flex space-x-4">
-                  <Image
-                    src="/NextJs-logo.png"
-                    width={100}
-                    height={100}
-                    alt="next js logo"
-                  />
-                  <Image
-                    src="/Typescript-logo.png"
-                    alt="Typescript logo"
-                    width={60}
-                    height={30}
-                  />
-                  <Image
-                    src="/Tailwind-logo.png"
-                    alt="Tailwind logo"
-                    width={60}
-                    height={30}
-                  />
-                </div>
-                <p className="mt-2 font-pageFont text-sm text-teal-600 ">
-                  This app was created after going to the thrift store and
-                  finding a hidden treasure at a low price. I also wanted to
-                  share the location of the store I found it in. So, I decided
-                  to create this app to do so.
-                </p>
-                <Link
-                  href="https://github.com/UlisesCodesForYou/thriftser-app"
-                  target="_blank"
-                >
-                  <button className="text-md mt-4 rounded-full bg-teal-600 py-3 px-7 font-pageFont tracking-wide text-white duration-300 hover:scale-110 hover:bg-[#F05307] xl:mt-12">
-                    View my code
-                  </button>
-                </Link>
-              </div>
-              <div className="group flex cursor-pointer flex-col items-center p-10 text-center hover:bg-slate-50">
-                <p className="mt-3 mb-5 font-pageFont text-3xl font-bold text-teal-600">
-                  GAAD Foundation
-                </p>
-                <Image
-                  src="/GAAD-Grid.png"
-                  width={600}
-                  height={500}
-                  alt="GAAD foundation"
-                  className="mb-6 h-3/6 w-fit transform transition-all hover:scale-110"
-                />
-                <div className="mb-4 flex space-x-4">
-                  <Image
-                    src="/NextJs-logo.png"
-                    width={100}
-                    height={100}
-                    alt="/"
-                  />
-                  <Image
-                    src="/Typescript-logo.png"
-                    alt="Typescript logo"
-                    width={60}
-                    height={40}
-                  />
-                  <Image
-                    src="/Mantine-logo.png"
-                    alt="Mantine logo"
-                    width={60}
-                    height={40}
-                  />
-                </div>
-                <p className="mt-2 font-pageFont text-sm text-teal-600 ">
-                  I am currently volunteering in the reconstruction of this
-                  website. GAAD foundtion was created he purpose of GAAD is to
-                  get everyone talking, thinking and learning about digital
-                  access and inclusion, and the more than One Billion people
-                  with disabilities/impairments.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
         <div className="m-auto h-72 w-full bg-white py-10 text-center">
           <p className="">
             <span className="mb-3 text-4xl font-medium text-teal-600">
