@@ -1,25 +1,31 @@
-import Footer from "../footer";
-import NavBar from "../navBar";
-import ContactForm from "../contactForm";
-import AboutMe from "../aboutMe";
-import Hero from "../hero";
-import MyProjects from "../myProjects";
-import MyResume from "../myResume";
-//configure imports Saul's way
+import Footer from "@components/footer";
+import NavBar from "@components//navBar";
+import ContactForm from "@components/contactForm";
+import AboutMe from "@components/aboutMe";
+import Hero from "@components/hero";
+import MyProjects from "@components/myProjects";
+import MyResume from "@components/myResume";
 
 export const MainPage = () => {
   return (
-    <>
-      <div className="flex h-screen flex-col justify-between bg-gray-50">
-        <section className="bg-gray-50"> </section>
+    <div className="flex h-screen flex-col justify-between bg-gray-50">
+      <div>
         <NavBar />
-        <Hero />
-        <AboutMe />
-        <MyProjects />
-        <MyResume />
-        <ContactForm />
-        <Footer />
       </div>
-    </>
+      <Hero />
+      <div id="aboutMe">
+        <AboutMe />
+      </div>
+      <div id="myProjects">
+        <MyProjects />
+      </div>
+      <div id="myResume">
+        <MyResume />
+      </div>
+      <div id="sayHello">
+        <ContactForm />
+      </div>
+      <Footer />
+    </div>
   );
 };
