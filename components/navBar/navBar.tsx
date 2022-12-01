@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
+import { Link } from "react-scroll/modules";
 import { useState } from "react";
 
 export const NavBar = () => {
@@ -47,27 +48,50 @@ export const NavBar = () => {
           <ul className="flex list-none flex-col items-center gap-x-8 p-4 tracking-wide md:flex-row md:space-x-8 md:border-0 md:bg-teal-600 md:text-lg lg:ml-auto lg:flex-row lg:text-lg">
             <li className="py-4 text-white duration-300 hover:scale-125">
               <Link
-                className="block rounded hover:cursor-pointer"
-                href="/#aboutMe"
+                className="outline-offset- block rounded hover:cursor-pointer"
+                to="aboutMe"
+                spy={true}
+                smooth={true}
+                offset={-150}
+                duration={100}
               >
                 About Me
               </Link>
             </li>
             <li className="py-4 text-white duration-300 hover:scale-125">
-              <Link className="hover:cursor-pointer" href="/#myProjects">
+              <Link
+                className="hover:cursor-pointer"
+                to="myProjects"
+                spy={true}
+                smooth={true}
+                offset={-120}
+                duration={100}
+              >
                 My Projects
               </Link>
             </li>
             <li className="py-4 text-white duration-300 hover:scale-125">
               <Link
                 className="block rounded hover:cursor-pointer"
-                href="/#myResume"
+                to="myResume"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
               >
                 My Resume
               </Link>
             </li>
             <button className="rounded-full py-4 px-7 text-sm tracking-wide text-white duration-300 hover:scale-110 hover:text-white sm:bg-teal-600 md:text-white lg:bg-white lg:text-black lg:hover:bg-[#F05307]">
-              <Link href="/#sayHello">SAY HELLO</Link>
+              <Link
+                to="sayHello"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                SAY HELLO
+              </Link>
             </button>
           </ul>
         </div>
