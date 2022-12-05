@@ -61,7 +61,7 @@ export const MyProjects = () => {
                 src="/Thriftster-page.png"
                 width={200}
                 height={300}
-                alt="cutlery store"
+                alt="Thrift store"
                 className="mb-6 transform transition-all hover:scale-110"
               />
               <div className="mb-4 flex space-x-4">
