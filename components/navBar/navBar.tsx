@@ -75,7 +75,7 @@ export const NavBar = () => {
                 to="myProjects"
                 spy={true}
                 smooth={true}
-                offset={-120}
+                offset={-90}
                 duration={100}
               >
                 My Projects
