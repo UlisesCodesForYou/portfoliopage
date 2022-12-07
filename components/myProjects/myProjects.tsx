@@ -110,6 +110,13 @@ export const MyProjects = () => {
                 alt="GAAD foundation"
                 className="mb-6 transform transition-all hover:scale-110"
               />
+              <Image
+                src="/GAAD-Founding-Grid.png"
+                width={600}
+                height={500}
+                alt="GAAD foundation"
+                className="mb-6 transform transition-all hover:scale-110"
+              />
               <div className="mb-4 flex space-x-4">
                 <Image
                   src="/NextJs-logo.png"
