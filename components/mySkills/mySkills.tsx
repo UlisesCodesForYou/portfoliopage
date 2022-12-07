@@ -1,4 +1,4 @@
-export const MyResume = () => {
+export const MySkills = () => {
   return (
     <>
       <div
@@ -9,11 +9,10 @@ export const MyResume = () => {
           <span className="mb-3 text-4xl font-medium text-teal-600">
             Key Skills:
           </span>{" "}
-          <br />
-          <span className="text-2xl text-teal-600 text-teal-600">
-            Please feel free to contact me if you would like to see my complete
-            skill set and Resume.
-          </span>
+        </p>
+        <p className="mt-2 text-2xl text-teal-600 text-teal-600">
+          Please feel free to contact me if you would like to see my complete
+          skill set and Resume.
         </p>
 
         <ul className="mt-5 mb-3 grid grid-cols-2 sm:grid-cols-2">

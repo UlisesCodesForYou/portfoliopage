@@ -4,7 +4,7 @@ import ContactForm from "@components/contactForm";
 import AboutMe from "@components/aboutMe";
 import Hero from "@components/hero";
 import MyProjects from "@components/myProjects";
-import MyResume from "@components/myResume";
+import MySkills from "@components/mySkills";
 
 export const MainPage = () => {
   return (
@@ -13,7 +13,7 @@ export const MainPage = () => {
       <Hero />
       <AboutMe />
       <MyProjects />
-      <MyResume />
+      <MySkills />
       <ContactForm />
       <Footer />
     </div>

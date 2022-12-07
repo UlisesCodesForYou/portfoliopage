@@ -89,7 +89,7 @@ const testCode = () => {
     /*          className="hover:cursor-pointer"*/
   }
   {
-    /*          onClick={() => scrollToSection(myResume)}*/
+    /*          onClick={() => scrollToSection(mySkills)}*/
   }
   {
     /*        >*/
@@ -178,7 +178,7 @@ const testCode = () => {
   //         <li className="py-1 text-white duration-300 hover:scale-125">
   //           <a
   //               className="block rounded hover:cursor-pointer"
-  //               onClick={() => scrollToSection(myResume)}
+  //               onClick={() => scrollToSection(mySkills)}
   //           >
   //             My Resume
   //           </a>
