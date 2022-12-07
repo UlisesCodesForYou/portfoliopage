@@ -10,12 +10,10 @@ export const MyResume = () => {
             Key Skills:
           </span>{" "}
           <br />
-          <div className="sm:m mt-1 md:mt-4">
-            <span className="text-2xl text-teal-600 text-teal-600">
-              Please feel free to contact me if you would like to see my
-              complete skill set and Resume.
-            </span>
-          </div>
+          <span className="text-2xl text-teal-600 text-teal-600">
+            Please feel free to contact me if you would like to see my complete
+            skill set and Resume.
+          </span>
         </p>
 
         <ul className="mt-5 mb-3 grid grid-cols-2 sm:grid-cols-2">
