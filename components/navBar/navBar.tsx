@@ -37,6 +37,7 @@ export const NavBar = () => {
             </svg>
           </button>
         </div>
+
         <div
           className={
             "flex-grow place-content-center lg:flex" +
