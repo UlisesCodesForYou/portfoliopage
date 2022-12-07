@@ -12,10 +12,12 @@ export const MyProjects = () => {
               Projects:
             </span>{" "}
             <br />
-            <span className="mt-2 font-pageFont text-lg text-white">
-              Below are a few of my projects along with the technologies I used
-              to create them.
-            </span>
+            <div className="sm:m mt-2 md:mt-4">
+              <span className="mt-2 font-pageFont text-lg text-white">
+                Below are a few of my projects along with the technologies I
+                used to create them.
+              </span>
+            </div>
           </p>
         </div>
         <div className="-mt-24 bg-opacity-10 px-3 py-20 md:lg:xl:px-20">
