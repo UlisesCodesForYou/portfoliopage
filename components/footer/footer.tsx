@@ -1,9 +1,17 @@
 import Link from "next/link";
-
+import Image from "next/image";
 export const Footer = () => {
   return (
     <footer className="bg-teal-600 text-center text-white">
       <div className="p-4 text-center">
+        <Image
+          src="/Footer-Symbol.png"
+          alt="Chef Hat"
+          width={100}
+          height={100}
+          className="m-auto"
+        />
+        <br />
         <Link
           href="https://github.com/UlisesCodesForYou/portfoliopage"
           target="_blank"
@@ -13,6 +21,7 @@ export const Footer = () => {
           </button>
         </Link>
       </div>
+
       <div className="container m-auto p-6">
         <div className="text-center">
           <p>

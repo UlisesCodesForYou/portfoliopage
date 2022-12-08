@@ -137,7 +137,7 @@ export const MyProjects = () => {
                 />
               </div>
               <p className="mt-2 font-pageFont text-sm text-teal-600 ">
-                I am currently volunteering in the reconstruction of this
+                I&apos;m currently volunteering in the reconstruction of this
                 website. GAAD foundtion was created he purpose of GAAD is to get
                 everyone talking, thinking and learning about digital access and
                 inclusion, and the more than One Billion people with

@@ -15,7 +15,7 @@ export const Hero = () => {
 
             <div className="mt-8 space-y-5 ">
               <p className="sm:text -mx-2 text-center font-pageFont text-teal-600 md:text-left lg:text-left">
-                I am a former Chef turned web developer. I design and build
+                I&apos;m a former Chef turned web developer. I design and build
                 websites and apps. I believe that both the Culinary and Software
                 development industries have the same root value; they both deal
                 with providing great user/guest experiences.
