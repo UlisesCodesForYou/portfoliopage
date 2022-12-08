@@ -20,6 +20,14 @@ export const Footer = () => {
             View this page&apos;s code on GitHub
           </button>
         </Link>
+        <p className="mt-2 mb-2 font-pageFont text-2xl">
+          And if you&apos;d like:
+        </p>
+        <Link href="https://github.com/UlisesCodesForYou" target="_blank">
+          <button className="rounded-full bg-white py-3 px-7 font-pageFont text-xs tracking-wide text-black duration-300 hover:scale-110 hover:bg-[#F05307] hover:text-white">
+            View my complete GitHub page
+          </button>
+        </Link>
       </div>
 
       <div className="container m-auto p-6">
