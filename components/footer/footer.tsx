@@ -8,7 +8,7 @@ export const Footer = () => {
           href="https://github.com/UlisesCodesForYou/portfoliopage"
           target="_blank"
         >
-          <button className="mb-4 rounded-full bg-white py-3 px-7 font-pageFont text-xs tracking-wide text-black duration-300 hover:scale-110 hover:bg-[#F05307] hover:text-white">
+          <button className="mb-5 rounded-full bg-white py-3 px-7 font-pageFont text-xs tracking-wide text-black duration-300 hover:scale-110 hover:bg-[#F05307] hover:text-white">
             View this page&apos;s code on GitHub
           </button>
         </Link>
@@ -17,7 +17,7 @@ export const Footer = () => {
           alt="Chef Hat"
           width={100}
           height={100}
-          className="m-auto"
+          className="m-auto duration-500 hover:rotate-180"
         />
         <div className="mt-4 flex place-content-center space-x-5">
           <Link href="https://github.com/UlisesCodesForYou" target="_blank">
@@ -37,7 +37,7 @@ export const Footer = () => {
               src="/Linked-In-Logo.png"
               alt="Linkedin Logo"
               width={60}
-              height={0}
+              height={60}
               className="duration-300 hover:scale-125"
             />
           </Link>
