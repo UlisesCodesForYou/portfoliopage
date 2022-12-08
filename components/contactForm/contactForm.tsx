@@ -54,7 +54,7 @@ export const ContactForm = () => {
 
   return (
     <section
-      className="sm:m mt-6 bg-gradient-to-t from-teal-600 lg:mt-2"
+      className="sm:m mt-36 bg-gradient-to-t from-teal-600 lg:mt-2"
       id="sayHello"
     >
       <div className="mx-auto max-w-screen-md py-8 px-4 lg:py-16">

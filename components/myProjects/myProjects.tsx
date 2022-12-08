@@ -4,7 +4,10 @@ import Link from "next/link";
 export const MyProjects = () => {
   return (
     <>
-      <section className="bg-gradient-to-b from-teal-600" id="myProjects">
+      <section
+        className="sm:m -mb-20 bg-gradient-to-b from-teal-600"
+        id="myProjects"
+      >
         {/*component*/}
         <div className="mr-6 ml-6 py-10 px-20 text-center">
           <p className="text-teal-600 ">
