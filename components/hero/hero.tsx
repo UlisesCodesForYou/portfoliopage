@@ -10,7 +10,7 @@ export const Hero = () => {
         <div className="w-full lg:w-1/2 ">
           <div className="lg:max-w-lg ">
             <h1 className="sm:text md:text text-center text-center font-pageFont text-xl font-bold text-teal-600 lg:text-left lg:text-4xl">
-              Hi, I am Ulises Orozco.
+              Hi, I&apos;m Ulises Orozco.
             </h1>
 
             <div className="mt-8 space-y-5 ">

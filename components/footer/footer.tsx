@@ -9,7 +9,7 @@ export const Footer = () => {
           target="_blank"
         >
           <button className="rounded-full bg-white py-3 px-7 font-pageFont text-xs tracking-wide text-black duration-300 hover:scale-110 hover:bg-[#F05307] hover:text-white">
-            View this pages code on GitHub
+            View this page&apos;s code on GitHub
           </button>
         </Link>
       </div>
