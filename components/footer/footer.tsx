@@ -26,6 +26,7 @@ export const Footer = () => {
               alt="GitHub Logo"
               width={50}
               height={50}
+              className="duration-300 hover:scale-125"
             />
           </Link>
           <Link
@@ -37,6 +38,7 @@ export const Footer = () => {
               alt="Linkedin Logo"
               width={60}
               height={0}
+              className="duration-300 hover:scale-125"
             />
           </Link>
         </div>
