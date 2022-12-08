@@ -14,6 +14,10 @@ export const MySkills = () => {
           Please feel free to contact me if you would like to see my complete
           skill set and Resume.
         </p>
+        <p className="mt-2 text-2xl text-teal-600 text-teal-600">
+          In the meantime, here are a few of the skills and languages I have
+          used:
+        </p>
 
         <ul className="mt-5 mb-3 grid grid-cols-2 sm:grid-cols-2">
           <div className="group list-disc flex-col font-pageFont text-teal-600 ">
@@ -22,8 +26,10 @@ export const MySkills = () => {
             <li>React Redux</li>
             <li>TypeScript</li>
             <li>Tailwind CSS</li>
+            <li>Website Design</li>
           </div>
           <div className="group flex-col items-center font-pageFont text-teal-600">
+            <li>App Design</li>
             <li>NextJS</li>
             <li>MirageJs</li>
             <li>UI Design</li>
