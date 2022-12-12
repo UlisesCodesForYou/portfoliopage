@@ -40,7 +40,7 @@ export const MyProjects = () => {
                 height={90}
                 className="mb-4"
               />
-              <p className="mt-2 font-pageFont text-sm text-teal-600">
+              <p className="text-md mt-2 font-pageFont text-teal-600">
                 As a former chef, I thought it would be fun to finally create
                 one. This is a static, cutlery website with functioning tabs.
               </p>
@@ -86,7 +86,7 @@ export const MyProjects = () => {
                   height={30}
                 />
               </div>
-              <p className="mt-2 font-pageFont text-sm text-teal-600 ">
+              <p className="text-md mt-2 font-pageFont text-teal-600 ">
                 This app was created after going to the thrift store and finding
                 a hidden treasure at a low price. I also wanted to share the
                 location of the store I found it in. So, I decided to create
@@ -139,7 +139,7 @@ export const MyProjects = () => {
                   height={40}
                 />
               </div>
-              <p className="mt-2 font-pageFont text-sm text-teal-600 ">
+              <p className="text-md mt-2 font-pageFont text-teal-600 ">
                 I&apos;m currently volunteering in the reconstruction of this
                 website. GAAD foundtion was created he purpose of GAAD is to get
                 everyone talking, thinking and learning about digital access and
