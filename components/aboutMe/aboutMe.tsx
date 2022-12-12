@@ -13,10 +13,10 @@ export const AboutMe = () => {
             </span>{" "}
           </p>
         </div>
-        <div className="container mx-auto -mt-2 flex flex-col-reverse space-y-6 px-6 py-10 lg:h-[32rem] lg:flex-row lg:items-center lg:py-16">
+        <div className="container mx-auto -mt-2 flex flex-col-reverse space-y-6 px-6 py-10 lg:h-[32rem] lg:flex-row lg:items-center  lg:py-16 ">
           <div className="w-full lg:w-1/2">
             <div className="sm::text text-center md:text-center lg:max-w-lg lg:text-left">
-              <div className="mt-8 space-y-5 ">
+              <div className="mt-8 space-y-5">
                 <p className="md:text text-md -mx-2 flex items-center font-pageFont text-white">
                   Hello once again! My name is Ulises Orozco and I enjoy cooking
                   up websites and apps. My journey to become a web developer

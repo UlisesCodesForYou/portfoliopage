@@ -9,7 +9,7 @@ export const MyProjects = () => {
         id="myProjects"
       >
         {/*component*/}
-        <div className="mr-6 ml-6 py-10 px-20 text-center">
+        <div className="py-10 px-10 text-center">
           <p className="text-teal-600 ">
             <span className="mb-3 text-4xl font-medium text-white">
               Projects:
