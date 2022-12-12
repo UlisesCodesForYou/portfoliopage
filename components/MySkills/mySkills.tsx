@@ -1,6 +1,6 @@
 export const MySkills = () => {
   return (
-    <div className="p-8 sm:md:-mt-16 lg:mt-10">
+    <div className="p-7 sm:md:-mt-16 lg:mt-10">
       <div
         className="m-auto h-72 w-full bg-white py-10 text-center"
         id="myResume"

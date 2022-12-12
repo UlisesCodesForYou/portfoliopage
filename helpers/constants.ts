@@ -1,17 +1,17 @@
 export const navLinks = [
   {
     id: 1,
-    text: "aboutMe",
+    text: "AboutMe",
     url: "#aboutMe",
   },
   {
     id: 2,
-    text: "myProjects",
+    text: "MyProjects",
     url: "#myProjects",
   },
   {
     id: 3,
-    text: "mySkills",
+    text: "MySkills",
     url: "#myResume",
   },
   {
