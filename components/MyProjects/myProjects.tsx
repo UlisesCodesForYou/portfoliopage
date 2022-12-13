@@ -21,8 +21,8 @@ export const MyProjects = () => {
           </p>
         </div>
         <div className="-mt-24 bg-opacity-10 px-3 py-20 md:lg:xl:px-20">
-          <div className="group grid grid-cols-1 bg-gray-50 md:lg:xl:grid-cols-3">
-            <div className="group flex cursor-pointer flex-col items-center p-10 text-center hover:bg-slate-50 ">
+          <div className="group grid grid-cols-1 rounded-lg bg-gray-50 md:lg:xl:grid-cols-3">
+            <div className="group flex cursor-pointer flex-col items-center p-10 text-center">
               <p className="mt-3 mb-7 font-pageFont text-3xl font-medium font-bold text-teal-600">
                 Cutlery Corner
               </p>
@@ -55,7 +55,7 @@ export const MyProjects = () => {
               </Link>
             </div>
 
-            <div className="group flex cursor-pointer flex-col items-center p-10 text-center hover:bg-slate-50">
+            <div className="group flex cursor-pointer flex-col items-center p-10 text-center">
               <p className="mt-3 mb-7 font-pageFont text-3xl font-bold text-teal-600">
                 Thriftster App
               </p>
@@ -101,7 +101,7 @@ export const MyProjects = () => {
                 </button>
               </Link>
             </div>
-            <div className="group flex cursor-pointer flex-col items-center p-10 text-center hover:bg-slate-50">
+            <div className="group flex cursor-pointer flex-col items-center p-10 text-center">
               <p className="mt-3 mb-5 font-pageFont text-3xl font-bold text-teal-600">
                 GAAD Foundation
               </p>
@@ -141,10 +141,9 @@ export const MyProjects = () => {
               </div>
               <p className="text-md mt-2 font-pageFont text-teal-600 ">
                 I&apos;m currently volunteering in the reconstruction of this
-                website. GAAD foundtion was created he purpose of GAAD is to get
-                everyone talking, thinking and learning about digital access and
-                inclusion, and the more than One Billion people with
-                disabilities/impairments.
+                website. GAAD foundation was created to get everyone talking,
+                thinking and learning about digital access and inclusion, and
+                the more than One Billion people with disabilities/impairments.
               </p>
             </div>
           </div>

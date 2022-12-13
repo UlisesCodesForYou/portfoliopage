@@ -45,7 +45,7 @@ export const NavBar = () => {
           }
           id="example-navbar-danger"
         >
-          <ul className="flex list-none flex-col items-center gap-x-8 p-4 tracking-wide md:flex-row md:space-x-8 md:border-0 md:bg-teal-600 md:text-lg lg:ml-auto lg:flex-row lg:text-lg">
+          <ul className="flex list-none flex-col items-center gap-x-8 p-4 tracking-wide md:flex-row md:space-x-8 md:bg-teal-600 md:text-lg lg:ml-auto lg:flex-row lg:text-lg">
             <li className="py-4 text-white duration-300 hover:scale-125">
               <Link
                 className="outline-offset- block rounded hover:cursor-pointer"
@@ -58,7 +58,7 @@ export const NavBar = () => {
                 Home
               </Link>
             </li>
-            <li className="py-4 text-white duration-300 hover:scale-125">
+            <li className="rounded-lg py-4 text-white duration-300 hover:scale-125">
               <Link
                 className="outline-offset- block rounded hover:cursor-pointer"
                 to="aboutMe"
