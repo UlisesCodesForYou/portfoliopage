@@ -22,7 +22,7 @@ export const MyProjects = () => {
         </div>
         <div className="-mt-24 bg-opacity-10 px-3 py-20 md:lg:xl:px-20">
           <div className="group grid grid-cols-1 rounded-lg bg-gray-50 md:lg:xl:grid-cols-3">
-            <div className="group flex cursor-pointer flex-col items-center p-10 text-center">
+            <div className="group flex cursor-pointer flex-col items-center bg-zinc-50 p-10 text-center">
               <p className="mt-3 mb-7 font-pageFont text-3xl font-medium font-bold text-teal-600">
                 Cutlery Corner
               </p>
@@ -31,7 +31,7 @@ export const MyProjects = () => {
                 width={500}
                 height={800}
                 alt="cutlery store"
-                className="mb-7 transform transition-all hover:scale-110"
+                className="mb-7 transform rounded-lg transition-all hover:scale-110"
               />
               <Image
                 src="/React3.png"
@@ -55,7 +55,7 @@ export const MyProjects = () => {
               </Link>
             </div>
 
-            <div className="group flex cursor-pointer flex-col items-center p-10 text-center">
+            <div className="group flex cursor-pointer flex-col items-center bg-zinc-50 p-10 text-center">
               <p className="mt-3 mb-7 font-pageFont text-3xl font-bold text-teal-600">
                 Thriftster App
               </p>
@@ -64,7 +64,7 @@ export const MyProjects = () => {
                 width={200}
                 height={300}
                 alt="Thrift store"
-                className="mb-6 transform transition-all hover:scale-110"
+                className="mb-6 transform rounded-lg transition-all hover:scale-110"
               />
               <div className="mb-4 flex space-x-4">
                 <Image
@@ -101,7 +101,7 @@ export const MyProjects = () => {
                 </button>
               </Link>
             </div>
-            <div className="group flex cursor-pointer flex-col items-center p-10 text-center">
+            <div className="group flex cursor-pointer flex-col items-center bg-zinc-50 p-10 text-center">
               <p className="mt-3 mb-5 font-pageFont text-3xl font-bold text-teal-600">
                 GAAD Foundation
               </p>
@@ -110,14 +110,14 @@ export const MyProjects = () => {
                 width={600}
                 height={500}
                 alt="GAAD foundation"
-                className="mb-6 transform transition-all hover:scale-110"
+                className="mb-6 transform rounded-lg transition-all hover:scale-110"
               />
               <Image
                 src="/GAAD-Founding-Grid.png"
                 width={600}
                 height={500}
                 alt="GAAD foundation"
-                className="mb-6 transform transition-all hover:scale-110"
+                className="mb-6 transform rounded-lg transition-all hover:scale-110"
               />
               <div className="mb-4 flex space-x-4">
                 <Image
