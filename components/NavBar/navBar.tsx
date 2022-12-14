@@ -40,7 +40,7 @@ export const NavBar = () => {
 
         <div
           className={
-            "flex-grow place-content-center lg:flex" +
+            "flex-grow place-content-center lg:flex " +
             (navbarOpen ? " flex" : " hidden")
           }
           id="example-navbar-danger"
