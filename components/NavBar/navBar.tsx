@@ -6,7 +6,7 @@ export const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
 
   return (
-    <nav className="fixed top-0 left-0 z-50 mb-3 flex w-full flex-wrap items-center justify-between rounded-b-lg bg-teal-600 py-3 py-3 px-2 font-pageFont">
+    <nav className="fixed top-0 left-0 z-50 mb-3 flex w-full flex-wrap items-center justify-between rounded-b-lg bg-teal-600 py-3 py-3 px-2 font-pageFont shadow-xl">
       <div className="container mx-auto flex flex-wrap justify-between px-4">
         <div className="relative flex w-full justify-between lg:static lg:block lg:w-auto lg:justify-start">
           <Image
