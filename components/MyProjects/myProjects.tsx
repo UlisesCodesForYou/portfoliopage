@@ -15,7 +15,7 @@ export const MyProjects = () => {
               Projects:
             </span>{" "}
           </p>
-          <p className="mt-2 font-pageFont text-lg text-teal-50">
+          <p className="mt-2 font-pageFont text-teal-50 sm:text-sm md:text-lg">
             Below are a few of my projects along with the technologies I used to
             create them.
           </p>
