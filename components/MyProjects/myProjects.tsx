@@ -10,12 +10,12 @@ export const MyProjects = () => {
       >
         {/*component*/}
         <div className="py-10 px-10 text-center">
-          <p className="text-teal-600 ">
+          <p>
             <span className="mb-3 text-4xl font-medium text-white">
               Projects:
             </span>{" "}
           </p>
-          <p className="mt-2 font-pageFont text-lg text-white">
+          <p className="mt-2 font-pageFont text-lg text-teal-50">
             Below are a few of my projects along with the technologies I used to
             create them.
           </p>
