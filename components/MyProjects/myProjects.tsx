@@ -22,7 +22,7 @@ export const MyProjects = () => {
         </div>
         <div className="-mt-24 bg-opacity-10 px-3 py-20 md:lg:xl:px-20 ">
           <div className="group grid grid-cols-1 shadow-xl md:lg:xl:grid-cols-3">
-            <div className="group flex cursor-pointer flex-col items-center bg-zinc-50 p-10 text-center ">
+            <div className="group flex flex-col items-center bg-zinc-50 p-10 text-center ">
               <p className="mt-3 mb-7 font-pageFont text-3xl font-medium font-bold text-teal-600">
                 Cutlery Corner
               </p>
@@ -55,7 +55,7 @@ export const MyProjects = () => {
               </Link>
             </div>
 
-            <div className="group flex cursor-pointer flex-col items-center bg-zinc-50 p-10 text-center">
+            <div className="group flex flex-col items-center bg-zinc-50 p-10 text-center">
               <p className="mt-3 mb-7 font-pageFont text-3xl font-bold text-teal-600">
                 Thriftster App
               </p>
@@ -101,7 +101,7 @@ export const MyProjects = () => {
                 </button>
               </Link>
             </div>
-            <div className="group flex cursor-pointer flex-col items-center bg-zinc-50 p-10 text-center">
+            <div className="group flex flex-col items-center bg-zinc-50 p-10 text-center">
               <p className="mt-3 mb-5 font-pageFont text-3xl font-bold text-teal-600">
                 GAAD Foundation
               </p>
