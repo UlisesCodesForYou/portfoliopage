@@ -39,7 +39,7 @@ export const AboutMe = () => {
           </div>
           <div className="flex h-96 w-full items-center justify-center lg:w-1/2">
             <Image
-              className="mx-auto h-full w-full rounded-md object-cover lg:max-w-2xl"
+              className="mx-auto h-full w-full rounded-md object-cover shadow-2xl lg:max-w-2xl"
               src="/My-photo.jpeg"
               alt="bald guy with glasses"
               width={500}
