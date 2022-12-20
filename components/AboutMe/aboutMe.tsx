@@ -17,7 +17,7 @@ export const AboutMe = () => {
           <div className="w-full lg:w-1/2">
             <div className="sm::text text-center md:text-center lg:max-w-lg lg:text-left">
               <div className="mt-8 space-y-5">
-                <p className="md:text text-md -mx-2 flex items-center font-pageFont text-white">
+                <p className="md:text text-md -mx-2 flex items-center font-pageFont text-gray-50">
                   Hello once again! My name is Ulises Orozco and I enjoy cooking
                   up websites and apps. My journey to become a web developer
                   started back in 2017. While working full-time in the
@@ -28,7 +28,7 @@ export const AboutMe = () => {
                   went on, I began to see each language and its properties as
                   ingredients; allowing me more creative freedom.
                 </p>
-                <p className="md:text text-md -mx-2 flex items-center font-pageFont text-white">
+                <p className="md:text text-md -mx-2 flex items-center font-pageFont text-gray-50">
                   Fast-forward to today, and I have completed a few websites and
                   apps. I have also been a volunteer for the GAAD (Global
                   Awareness Accessibility Day) Foundation in their site
