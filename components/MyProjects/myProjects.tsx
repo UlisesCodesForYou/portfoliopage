@@ -141,9 +141,9 @@ export const MyProjects = () => {
               </div>
               <p className="text-md mt-2 font-pageFont text-teal-600 ">
                 I&apos;m currently volunteering in the reconstruction of this
-                website. GAAD foundation was created to get everyone talking,
-                thinking and learning about digital access and inclusion, and
-                the more than One Billion people with disabilities/impairments.
+                website. The GAAD Foundation’s vision is for accessibility to be
+                part of the product development lifecycle for technology and
+                digital products.
               </p>
             </div>
           </div>
