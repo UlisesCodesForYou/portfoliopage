@@ -80,12 +80,12 @@ export const ContactForm = () => {
           <div>
             <label
               htmlFor="email"
-              className="mb-2 block text-sm font-medium text-gray-900"
+              className="mb-2 block text-xs font-medium text-gray-900"
             >
               Your email
             </label>
             <input
-              className="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-md"
+              className="focus:ring-primary-500 block h-12 w-full rounded-lg border-2 border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-md"
               id="email"
               type="email"
               name="email"
@@ -105,12 +105,12 @@ export const ContactForm = () => {
           <div>
             <label
               htmlFor="subject"
-              className="mb-2 block text-sm font-medium text-gray-900"
+              className="mb-2 block text-xs font-medium text-gray-900"
             >
               Subject
             </label>
             <input
-              className="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-md"
+              className="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border-2 border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-lg"
               type="text"
               name="subject"
               id="subject"
@@ -122,7 +122,7 @@ export const ContactForm = () => {
             />
             {enteredSubjectInputHasError && (
               <p className="mt-2 text-xs italic text-red-800">
-                If you consummed Medium rare chicken please go to the E.R! Also,
+                If you consumed Medium rare chicken please go to the E.R! Also,
                 please do not leave me blank. I get lonely.{" "}
               </p>
             )}
@@ -130,15 +130,15 @@ export const ContactForm = () => {
           <div className="sm:col-span-2">
             <label
               htmlFor="message"
-              className="mb-2 block text-sm font-medium text-gray-900"
+              className="mb-2 block text-xs font-medium text-gray-900"
             >
               Your message
             </label>
             <textarea
-              className="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-md"
+              className="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border-2 border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-lg"
               id="message"
               name="message"
-              placeholder="Leave a comment..."
+              placeholder="Leave a message..."
               onChange={enteredTextChangedHandler}
               onBlur={enteredTextBlurHandler}
               value={enteredText}
