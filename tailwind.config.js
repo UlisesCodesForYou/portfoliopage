@@ -9,7 +9,7 @@ module.exports = {
       pageFont: ["Source Code Pro"],
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
 
 // Remove the bg thing if the text goes away.
