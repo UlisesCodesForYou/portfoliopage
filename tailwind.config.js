@@ -9,6 +9,7 @@ module.exports = {
       pageFont: ["Source Code Pro"],
     },
   },
+
   plugins: [require("daisyui")],
 };
 

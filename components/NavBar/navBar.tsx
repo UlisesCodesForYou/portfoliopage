@@ -184,7 +184,7 @@ export const NavBar = () => {
             </button>
           </ul>
         </div>
-        <div className="dropdown dropdown-end">
+        <div className="dropdown-end dropdown">
           <label tabIndex={0} className="btn-ghost btn lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
