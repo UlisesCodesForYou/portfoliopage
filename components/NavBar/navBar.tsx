@@ -253,6 +253,17 @@ export const NavBar = () => {
                 My Skills
               </Link>
             </li>
+            <li className="rounded py-4 text-teal-600">
+              <Link
+                to="sayHello"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                Say Hello!
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
