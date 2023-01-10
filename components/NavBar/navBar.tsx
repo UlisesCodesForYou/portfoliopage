@@ -121,7 +121,7 @@ export const NavBar = () => {
             className="sm:m ml-5 animate-bounce"
           />
         </div>
-        <div className="navbar-center relative flex hidden w-full justify-between lg:static lg:block lg:w-auto lg:justify-start">
+        <div className="navbar relative flex hidden w-full justify-between lg:static lg:block lg:w-auto lg:justify-start">
           <ul className="menu menu-horizontal items-center gap-x-8">
             <li className="py-4 text-white duration-300 hover:scale-125">
               <Link
