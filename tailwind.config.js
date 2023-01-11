@@ -11,6 +11,15 @@ module.exports = {
   },
 
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: "#0F666E",
+        },
+      },
+    ],
+  },
 };
 
 // Remove the bg thing if the text goes away.

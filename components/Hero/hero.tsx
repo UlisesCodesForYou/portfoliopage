@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <>
       <div
-        className="mt-18 container mx-auto mt-10 flex flex-col-reverse space-y-6 px-6 py-10 lg:h-[32rem] lg:flex-row lg:items-center lg:py-16 "
+        className="mt-18 container mx-auto mt-10 flex flex-col-reverse space-y-6 px-6 py-10 lg:h-[32rem] lg:flex-row lg:items-center lg:py-16"
         id="home"
       >
         <div className="w-full lg:w-1/2 ">
