@@ -10,10 +10,13 @@ export const Hero = () => {
         <div className="w-full lg:w-1/2 ">
           <div className="lg:max-w-lg ">
             <h1 className="sm:text md:text text-center text-center font-pageFont text-xl font-bold text-teal-600 lg:text-left lg:text-4xl">
-              Hi, I&apos;m Ulises Orozco.
+              Hello there!
             </h1>
+            <h2 className="sm:text md:text mt-5 text-center text-center font-pageFont text-xl font-bold text-teal-600 lg:text-left lg:text-3xl">
+              I&apos;m Ulises Orozco
+            </h2>
 
-            <div className="mt-8 space-y-5 ">
+            <div className="mt-5 space-y-5 ">
               <p className="sm:text -mx-2 text-center font-pageFont text-teal-600 md:text-left lg:text-left">
                 I&apos;m a former Chef turned web developer. I design and build
                 websites and apps. I believe that both the Culinary and Software
