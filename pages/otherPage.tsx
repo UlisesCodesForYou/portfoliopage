@@ -1,167 +1,34 @@
 import Image from "next/image";
-import { Link } from "react-scroll/modules";
-
-const NavBar = () => {
+import NavBar from "@components/NavBar";
+const Hero = () => {
   return (
     <>
-      <nav className="fixed top-0 left-0 z-50 mb-3 flex w-full flex-wrap items-center justify-between rounded-b-lg bg-[#14adc6] py-3 py-3 px-2 font-pageFont shadow-xl">
-        <div className="navbar-start">
+      <NavBar />
+      <div className=" hero min-h-screen bg-gray-50">
+        <div className="hero-content flex-col flex-col-reverse lg:flex-row-reverse ">
+          <div className="text-center lg:text-left">
+            <h1 className=" mt-8 text-5xl font-bold text-[#0092A8]">
+              Hi, I&apos;m Ulises
+            </h1>
+            <p className="py-6 text-2xl text-[#14adc6]">
+              I&apos;m a former Chef turned web developer. I design and build
+              websites and apps. I believe that both the Culinary and Software
+              development industries have the same root value; they both deal
+              with providing great user/guest experiences.
+            </p>
+          </div>
           <Image
-            src="/Chef-Hat3.png"
-            width={70}
-            height={70}
+            className="mx-auto object-cover xl:mt-10 2xl:mt-10"
+            src="/Logo-2.png"
             alt="chef hat"
-            className="sm:m ml-5 animate-bounce"
+            width={600}
+            height={600}
           />
         </div>
-        <div className="navbar relative flex hidden w-full justify-between lg:static lg:block lg:w-auto lg:justify-start">
-          <ul className="menu menu-horizontal items-center gap-x-8">
-            <li className="py-4 text-white duration-300 hover:scale-125">
-              <Link
-                className="outline-offset- block rounded hover:cursor-pointer lg:hover:bg-[#0092A8]"
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={100}
-              >
-                Home
-              </Link>
-            </li>
-            <li className="rounded-lg py-4 text-white duration-300 hover:scale-125">
-              <Link
-                className="outline-offset- block rounded hover:cursor-pointer lg:hover:bg-[#0092A8]"
-                to="aboutMe"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={100}
-              >
-                About Me
-              </Link>
-            </li>
-            <li className="py-4 text-white duration-300 hover:scale-125">
-              <Link
-                className="rounded hover:cursor-pointer lg:hover:bg-[#0092A8]"
-                to="myProjects"
-                spy={true}
-                smooth={true}
-                offset={-90}
-                duration={100}
-              >
-                My Projects
-              </Link>
-            </li>
-            <li className="py-4 text-white duration-300 hover:scale-125">
-              <Link
-                className="block rounded hover:cursor-pointer lg:hover:bg-[#0092A8]"
-                to="myResume"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={100}
-              >
-                My Skills
-              </Link>
-            </li>
-            <button className="btn rounded-full duration-300 hover:scale-110 hover:text-white sm:bg-teal-600 md:text-white lg:bg-white lg:text-black lg:hover:bg-[#0092A8]">
-              <Link
-                to="sayHello"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={100}
-              >
-                SAY HELLO
-              </Link>
-            </button>
-          </ul>
-        </div>
-        <div className="dropdown-end dropdown">
-          <label tabIndex={0} className="btn-ghost btn lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="h-6 w-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
-              />
-            </svg>
-          </label>
-          <ul
-            tabIndex={0}
-            className="dropdown-content menu rounded-box menu-compact mt-3 w-52 space-x-4 bg-base-100 p-2 shadow"
-          >
-            <li className="rounded py-4 text-teal-600">
-              <Link
-                className="outline-offset- block rounded hover:cursor-pointer"
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={100}
-              >
-                Home
-              </Link>
-            </li>
-            <li className="rounded py-4 text-teal-600">
-              <Link
-                className="outline-offset- block rounded hover:cursor-pointer"
-                to="aboutMe"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={100}
-              >
-                About Me
-              </Link>
-            </li>
-            <li className="rounded py-4 text-teal-600">
-              <Link
-                className="hover:cursor-pointer"
-                to="myProjects"
-                spy={true}
-                smooth={true}
-                offset={-90}
-                duration={100}
-              >
-                My Projects
-              </Link>
-            </li>
-            <li className="rounded py-4 text-teal-600">
-              <Link
-                className="block rounded hover:cursor-pointer"
-                to="myResume"
-                spy={true}
-                smooth={true}
-                offset={-90}
-                duration={100}
-              >
-                My Skills
-              </Link>
-            </li>
-            <li className="rounded py-4 text-teal-600">
-              <Link
-                to="sayHello"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={100}
-              >
-                Say Hello!
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      </div>
     </>
   );
 };
 
-export default NavBar;
+// bg-gradient-to-b from-[#14adc6] via-[#0092A8] to-[#1D5861]
+export default Hero;
