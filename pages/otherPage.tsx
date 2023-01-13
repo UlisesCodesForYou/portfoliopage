@@ -4,10 +4,10 @@ import { Link } from "react-scroll/modules";
 const NavBar = () => {
   return (
     <>
-      <nav className="fixed top-0 left-0 z-50 mb-3 flex w-full flex-wrap items-center justify-between rounded-b-lg bg-[#014F86]  py-3 py-3 px-2 font-pageFont shadow-xl">
+      <nav className="fixed top-0 left-0 z-50 mb-3 flex w-full flex-wrap items-center justify-between rounded-b-lg bg-[#014F86] py-3 py-3 px-2 font-pageFont shadow-xl">
         <div className="navbar-start">
           <Image
-            src="/Chef-Hat.png"
+            src="/Chef-Hat4.png"
             width={70}
             height={70}
             alt="chef hat"
@@ -64,7 +64,7 @@ const NavBar = () => {
                 My Skills
               </Link>
             </li>
-            <button className="btn rounded-full duration-300 hover:scale-110 hover:text-black sm:bg-teal-600 md:text-white lg:bg-white lg:text-black lg:hover:bg-emerald-200">
+            <button className="btn rounded-full duration-300 hover:scale-110 sm:bg-teal-600 md:text-white lg:bg-white lg:text-black lg:hover:bg-emerald-300">
               <Link
                 to="sayHello"
                 spy={true}
@@ -96,11 +96,11 @@ const NavBar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="dropdown-content menu rounded-box menu-compact mt-3 w-52 space-x-4 bg-[#297770] p-2 shadow"
+            className="dropdown-content menu rounded-box menu-compact mt-3 w-52 space-x-4 bg-[#012A4A] p-2 shadow"
           >
             <li className="rounded py-4 text-white">
               <Link
-                className="outline-offset- block rounded hover:cursor-pointer hover:bg-[#435d5b]"
+                className="outline-offset- block rounded hover:cursor-pointer hover:bg-emerald-300 hover:text-black"
                 to="home"
                 spy={true}
                 smooth={true}
@@ -112,7 +112,7 @@ const NavBar = () => {
             </li>
             <li className="rounded py-4 text-white">
               <Link
-                className="outline-offset- block rounded hover:cursor-pointer hover:bg-[#435d5b]"
+                className="outline-offset- block rounded hover:cursor-pointer hover:bg-emerald-300 hover:text-black"
                 to="aboutMe"
                 spy={true}
                 smooth={true}
@@ -124,7 +124,7 @@ const NavBar = () => {
             </li>
             <li className="rounded py-4 text-white">
               <Link
-                className="hover:cursor-pointer hover:bg-[#435d5b]"
+                className="hover:cursor-pointer hover:bg-emerald-300 hover:text-black"
                 to="myProjects"
                 spy={true}
                 smooth={true}
@@ -136,7 +136,7 @@ const NavBar = () => {
             </li>
             <li className="rounded py-4 text-white">
               <Link
-                className="block rounded hover:cursor-pointer hover:bg-[#435d5b]"
+                className="block rounded hover:cursor-pointer hover:bg-emerald-300 hover:text-black"
                 to="myResume"
                 spy={true}
                 smooth={true}
@@ -148,7 +148,7 @@ const NavBar = () => {
             </li>
             <li className="rounded py-4 text-white">
               <Link
-                className="block rounded hover:cursor-pointer hover:bg-[#435d5b]"
+                className="block rounded hover:cursor-pointer hover:bg-emerald-300 hover:text-black"
                 to="sayHello"
                 spy={true}
                 smooth={true}
