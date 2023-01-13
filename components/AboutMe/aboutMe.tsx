@@ -36,7 +36,7 @@ export const AboutMe = () => {
           </div>
           <div className="flex h-96 w-full items-center justify-center lg:w-1/2">
             <Image
-              className="mx-auto h-full w-full rounded-md object-cover shadow-2xl lg:max-w-2xl"
+              className="mx-auto h-full w-full rounded-md object-cover shadow-2xl shadow-none transition-shadow duration-300 ease-in-out hover:shadow-xl lg:max-w-2xl "
               src="/My-photo.jpeg"
               alt="bald guy with glasses"
               width={500}
@@ -80,11 +80,11 @@ export const AboutMe = () => {
       {/*    </div>*/}
       {/*    <div className="flex h-96 w-full items-center justify-center lg:w-1/2">*/}
       {/*      <Image*/}
-      {/*          className="mx-auto h-full w-full rounded-lg object-cover shadow-2xl lg:max-w-2xl"*/}
-      {/*          src="/My-photo.jpeg"*/}
-      {/*          alt="bald guy with glasses"*/}
-      {/*          width={500}*/}
-      {/*          height={500}*/}
+      {/*        className="shadow-4xl mx-auto h-full w-full rounded-md object-cover shadow-none transition-shadow duration-300 ease-in-out hover:shadow-xl lg:max-w-2xl "*/}
+      {/*        src="/My-photo.jpeg"*/}
+      {/*        alt="bald guy with glasses"*/}
+      {/*        width={500}*/}
+      {/*        height={500}*/}
       {/*      />*/}
       {/*    </div>*/}
       {/*  </div>*/}
