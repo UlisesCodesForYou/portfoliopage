@@ -75,7 +75,7 @@ export const NavBar = () => {
                 offset={-100}
                 duration={100}
               >
-                SAY HELLO
+                CONTACT ME
               </Link>
             </button>
           </ul>
@@ -158,7 +158,7 @@ export const NavBar = () => {
                 offset={-100}
                 duration={100}
               >
-                Say Hello!
+                Contact Me
               </Link>
             </li>
           </ul>
@@ -234,7 +234,7 @@ export const NavBar = () => {
       {/*          offset={-100}*/}
       {/*          duration={100}*/}
       {/*        >*/}
-      {/*          SAY HELLO*/}
+      {/*          CONTACT ME*/}
       {/*        </Link>*/}
       {/*      </button>*/}
       {/*    </ul>*/}
@@ -317,7 +317,7 @@ export const NavBar = () => {
       {/*          offset={-100}*/}
       {/*          duration={100}*/}
       {/*        >*/}
-      {/*          Say Hello!*/}
+      {/*          Contact Me*/}
       {/*        </Link>*/}
       {/*      </li>*/}
       {/*    </ul>*/}
