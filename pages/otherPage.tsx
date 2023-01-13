@@ -1,168 +1,65 @@
-import Image from "next/image";
-import { Link } from "react-scroll/modules";
+/* This example requires Tailwind CSS v3.0+ */
 
-const NavBar = () => {
+import NavBar from "@components/NavBar";
+
+const Hero = () => {
   return (
     <>
-      <nav className="fixed top-0 left-0 z-50 mb-3 flex w-full flex-wrap items-center justify-between rounded-b-lg bg-[#014F86] py-3 py-3 px-2 font-pageFont shadow-xl">
-        <div className="navbar-start">
-          <Image
-            src="/Chef-Hat4.png"
-            width={70}
-            height={70}
-            alt="chef hat"
-            className="sm:m ml-5 animate-bounce"
-          />
-        </div>
-        <div className="navbar relative flex hidden w-full justify-between lg:static lg:block lg:w-auto lg:justify-start">
-          <ul className="menu menu-horizontal items-center gap-x-8">
-            <li className="py-4 text-white duration-300 hover:scale-125">
-              <Link
-                className="outline-offset- block rounded hover:cursor-pointer lg:hover:bg-[#012A4A]"
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={100}
-              >
-                Home
-              </Link>
-            </li>
-            <li className="rounded-lg py-4 text-white duration-300 hover:scale-125">
-              <Link
-                className="outline-offset- block rounded hover:cursor-pointer lg:hover:bg-[#012A4A]"
-                to="aboutMe"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={100}
-              >
-                About Me
-              </Link>
-            </li>
-            <li className="py-4 text-white duration-300 hover:scale-125">
-              <Link
-                className="rounded hover:cursor-pointer lg:hover:bg-[#012A4A]"
-                to="myProjects"
-                spy={true}
-                smooth={true}
-                offset={-90}
-                duration={100}
-              >
-                My Projects
-              </Link>
-            </li>
-            <li className="py-4 text-white duration-300 hover:scale-125">
-              <Link
-                className="block rounded hover:cursor-pointer lg:hover:bg-[#012A4A]"
-                to="myResume"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={100}
-              >
-                My Skills
-              </Link>
-            </li>
-            <button className="btn rounded-full duration-300 hover:scale-110 hover:text-[#023020] lg:bg-white lg:text-black lg:hover:bg-emerald-300">
-              <Link
-                to="sayHello"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={100}
-              >
-                SAY HELLO
-              </Link>
-            </button>
-          </ul>
-        </div>
-        <div className="dropdown-end dropdown">
-          <label tabIndex={0} className="btn-ghost btn lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="h-6 w-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
-              />
-            </svg>
-          </label>
-          <ul
-            tabIndex={0}
-            className="dropdown-content menu rounded-box menu-compact mt-3 w-52 space-x-4 bg-[#012A4A] p-2 shadow"
-          >
-            <li className="rounded py-4 text-white">
-              <Link
-                className="outline-offset- block rounded hover:cursor-pointer hover:bg-emerald-300 hover:text-black"
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={100}
-              >
-                Home
-              </Link>
-            </li>
-            <li className="rounded py-4 text-white">
-              <Link
-                className="outline-offset- block rounded hover:cursor-pointer hover:bg-emerald-300 hover:text-black"
-                to="aboutMe"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={100}
-              >
-                About Me
-              </Link>
-            </li>
-            <li className="rounded py-4 text-white">
-              <Link
-                className="hover:cursor-pointer hover:bg-emerald-300 hover:text-black"
-                to="myProjects"
-                spy={true}
-                smooth={true}
-                offset={-90}
-                duration={100}
-              >
-                My Projects
-              </Link>
-            </li>
-            <li className="rounded py-4 text-white">
-              <Link
-                className="block rounded hover:cursor-pointer hover:bg-emerald-300 hover:text-black"
-                to="myResume"
-                spy={true}
-                smooth={true}
-                offset={-90}
-                duration={100}
-              >
-                My Skills
-              </Link>
-            </li>
-            <li className="rounded py-4 text-white">
-              <Link
-                className="block rounded hover:cursor-pointer hover:bg-emerald-300 hover:text-black"
-                to="sayHello"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={100}
-              >
-                Say Hello!
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <NavBar />
+      <div className="isolate bg-white">
+        <main>
+          <div className="relative px-6 lg:px-8">
+            <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
+              <div className="sm:mt mt-16 md:mt-0 lg:mt-0">
+                <div>
+                  <h1 className="text-4xl font-bold tracking-tight text-gray-600 sm:text-center sm:text-6xl">
+                    Hello! My name is
+                  </h1>
+                  <h1 className="text-4xl font-bold tracking-tight text-gray-600 sm:text-center sm:text-6xl">
+                    Ulises Orozco
+                  </h1>
+                  <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
+                    I&apos;m a former Chef turned web developer. I design and
+                    build websites and apps. I believe that both the Culinary
+                    and Software development industries have the same root
+                    value; they both deal with providing great user/guest
+                    experiences.
+                  </p>
+                </div>
+                <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+                  <svg
+                    className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
+                    viewBox="0 0 1155 678"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="url(#ecb5b0c9-546c-4772-8c71-4d3f06d544bc)"
+                      fillOpacity=".3"
+                      d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="ecb5b0c9-546c-4772-8c71-4d3f06d544bc"
+                        x1="1155.49"
+                        x2="-78.208"
+                        y1=".177"
+                        y2="474.645"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="#014F86" />
+                        <stop offset={1} stopColor="#014F86" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
     </>
   );
 };
 
-export default NavBar;
+export default Hero;
