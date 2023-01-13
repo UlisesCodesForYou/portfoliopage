@@ -64,7 +64,7 @@ const NavBar = () => {
                 My Skills
               </Link>
             </li>
-            <button className="btn rounded-full duration-300 hover:scale-110 sm:bg-teal-600 md:text-white lg:bg-white lg:text-black lg:hover:bg-emerald-300">
+            <button className="btn rounded-full duration-300 hover:scale-110 hover:text-[#023020] lg:bg-white lg:text-black lg:hover:bg-emerald-300">
               <Link
                 to="sayHello"
                 spy={true}
