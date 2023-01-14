@@ -161,7 +161,7 @@ export const MyProjects = () => {
       {/*  </div>*/}
       {/*  /!*###### WORK SECTION 2 #######*!/*/}
       {/*  <div className="mt-2 bg-opacity-10 py-10 md:lg:xl:px-20">*/}
-      {/*    <div className="group grid grow grid-cols-1 md:justify-items-center md:lg:xl:grid-cols-3">*/}
+      {/*    <div className="group ml-4 grid grow grid-cols-1 md:justify-items-center md:lg:xl:grid-cols-3 lg:ml-3">*/}
       {/*      <div className="card w-96 bg-base-100 shadow-xl">*/}
       {/*        <figure>*/}
       {/*          <Image*/}
