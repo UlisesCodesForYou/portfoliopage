@@ -68,10 +68,10 @@ export const Footer = () => {
             </button>
           </Link>
           <Image
-            src="/Footer-Symbol.png"
+            src="/Footer-Symbol2.png"
             alt="Chef Hat"
-            width={100}
-            height={100}
+            width={112}
+            height={112}
             className="m-auto duration-500 hover:rotate-180"
           />
           <div className="mt-4 flex place-content-center space-x-5">
