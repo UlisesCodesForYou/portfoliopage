@@ -165,11 +165,11 @@ export const MyProjects = () => {
       {/*      <div className="card w-96 bg-base-100 shadow-xl">*/}
       {/*        <figure>*/}
       {/*          <Image*/}
-      {/*              src="/Cutlery-Corner.png"*/}
-      {/*              width={500}*/}
-      {/*              height={800}*/}
-      {/*              alt="cutlery store"*/}
-      {/*              className="-mb-1 transform rounded-lg"*/}
+      {/*            src="/Cutlery-Corner.png"*/}
+      {/*            width={500}*/}
+      {/*            height={800}*/}
+      {/*            alt="cutlery store"*/}
+      {/*            className="-mb-1 transform rounded-lg"*/}
       {/*          />*/}
       {/*        </figure>*/}
       {/*        <div className="card-body">*/}
@@ -193,8 +193,8 @@ export const MyProjects = () => {
       {/*              MirageJS*/}
       {/*            </div>*/}
       {/*            <Link*/}
-      {/*                href="https://github.com/UlisesCodesForYou/Cutlery-Corner-"*/}
-      {/*                target="_blank"*/}
+      {/*              href="https://github.com/UlisesCodesForYou/Cutlery-Corner-"*/}
+      {/*              target="_blank"*/}
       {/*            >*/}
       {/*              <button className="text-md badge-outline badge rounded-sm border-emerald-800 bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-black duration-300 hover:scale-110 lg:text-black lg:hover:bg-emerald-500 xl:mt-4">*/}
       {/*                View my code*/}
@@ -207,11 +207,11 @@ export const MyProjects = () => {
       {/*      <div className="card mt-6 w-96 bg-base-100 shadow-xl md:mt-6 lg:mt-0">*/}
       {/*        <figure>*/}
       {/*          <Image*/}
-      {/*              src="/Thriftster-page.png"*/}
-      {/*              width={200}*/}
-      {/*              height={300}*/}
-      {/*              alt="Thrift store"*/}
-      {/*              className="-mb-1 transform rounded-lg"*/}
+      {/*            src="/Thriftster-page.png"*/}
+      {/*            width={200}*/}
+      {/*            height={300}*/}
+      {/*            alt="Thrift store"*/}
+      {/*            className="-mb-1 transform rounded-lg"*/}
       {/*          />*/}
       {/*        </figure>*/}
       {/*        <div className="card-body">*/}
@@ -239,8 +239,8 @@ export const MyProjects = () => {
       {/*              Tailwind CSS*/}
       {/*            </div>*/}
       {/*            <Link*/}
-      {/*                href="https://github.com/UlisesCodesForYou/thriftser-app"*/}
-      {/*                target="_blank"*/}
+      {/*              href="https://github.com/UlisesCodesForYou/thriftser-app"*/}
+      {/*              target="_blank"*/}
       {/*            >*/}
       {/*              <button className="text-md badge-outline badge rounded-sm border-emerald-800 bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-black duration-300 hover:scale-110 lg:text-black lg:hover:bg-emerald-500 xl:mt-4">*/}
       {/*                View my code*/}
@@ -253,11 +253,11 @@ export const MyProjects = () => {
       {/*      <div className="card mt-6 w-96 bg-base-100 shadow-xl md:lg:mt-0">*/}
       {/*        <figure>*/}
       {/*          <Image*/}
-      {/*              src="/GAAD-Grid.png"*/}
-      {/*              width={500}*/}
-      {/*              height={800}*/}
-      {/*              alt="GAAD foundation"*/}
-      {/*              className="-mb-1 transform rounded-lg"*/}
+      {/*            src="/GAAD-Grid.png"*/}
+      {/*            width={500}*/}
+      {/*            height={800}*/}
+      {/*            alt="GAAD foundation"*/}
+      {/*            className="-mb-1 transform rounded-lg"*/}
       {/*          />*/}
       {/*        </figure>*/}
       {/*        <div className="card-body mt-12">*/}

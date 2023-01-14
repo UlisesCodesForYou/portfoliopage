@@ -47,7 +47,7 @@ export const AboutMe = () => {
       </section>
 
       {/*##### ABOUT ME SECTION 2 #######*/}
-      {/*<section className="bg-white" id="aboutMe">*/}
+      {/*<section className="bg-sky-50" id="aboutMe">*/}
       {/*  <div className="relative flex items-center py-5">*/}
       {/*    <div className="m-8 flex-grow border-t border-gray-400"></div>*/}
       {/*    <span className="mx-4 flex-shrink font-pageFont text-4xl text-gray-600">*/}
