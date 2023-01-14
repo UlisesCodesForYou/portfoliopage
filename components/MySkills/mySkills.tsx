@@ -45,7 +45,7 @@ export const MySkills = () => {
 
       {/*// /!*###### POSSIBLE SKILLS CARDS ######*!/*/}
 
-      <section className="mt-20 bg-sky-50">
+      <section className="mt-20 bg-sky-50" id="myResume">
         <div className="relative flex items-center py-5">
           <div className="m-3 flex-grow border-t border-gray-400"></div>
           <span className="mx-4 flex-shrink font-pageFont text-4xl text-gray-600">
