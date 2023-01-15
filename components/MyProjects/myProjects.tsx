@@ -178,8 +178,8 @@ export const MyProjects = () => {
                 </h2>
                 <p className="mb-3 text-gray-600">
                   {" "}
-                  As a former chef, I thought it would be fun to finally create
-                  one. This is a static, cutlery website with functioning tabs.
+                  As a former chef, I thought it would be fun to create a
+                  cutlery store. This is a static website with functioning tabs.
                   This is my first completed project.
                 </p>
                 <div className="card-actions justify-center">
@@ -221,9 +221,8 @@ export const MyProjects = () => {
                 <p className="mb-3 text-gray-600">
                   {" "}
                   This app was created after going to the thrift store and
-                  finding a hidden treasure at a low price. I also wanted to
-                  share the location of the store I found it in. So, I decided
-                  to create this app to do so.
+                  finding a hidden treasure at a low price and wanted to share
+                  the location. So, I decided to create this app to do so.
                 </p>
                 <div className="card-actions justify-center">
                   <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
