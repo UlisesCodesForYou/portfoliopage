@@ -157,7 +157,7 @@ export const ContactForm = () => {
               </div>
               <div className="container text-center">
                 <button
-                  className="text-md badge-outline badge cursor-pointer rounded-full border-emerald-800 bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-black duration-300 hover:scale-110 disabled:opacity-30 sm:m-auto lg:text-black lg:hover:bg-emerald-500 xl:mt-10"
+                  className="text-md h-18 badge-outline badge cursor-pointer rounded-full border-emerald-800 bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-black duration-300 hover:scale-110 disabled:opacity-30 sm:m-auto lg:text-black lg:hover:bg-emerald-500 xl:mt-10"
                   disabled={!formIsValid}
                   onSubmit={formSubmissionHandler}
                   type="submit"
