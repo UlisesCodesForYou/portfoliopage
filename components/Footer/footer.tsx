@@ -9,7 +9,7 @@ export const Footer = () => {
             href="https://github.com/UlisesCodesForYou/portfoliopage"
             target="_blank"
           >
-            <button className="btn mb-10 rounded-full bg-white font-pageFont text-sm duration-300 hover:scale-110 hover:text-[#023020] lg:text-black lg:hover:bg-emerald-300">
+            <button className="btn mb-10 rounded-full bg-white font-pageFont text-sm text-black duration-300 hover:scale-110 hover:text-[#023020] lg:hover:bg-emerald-300">
               View this page&apos;s code on GitHub
             </button>
           </Link>
