@@ -4,7 +4,10 @@ import Link from "next/link";
 export const MyProjects = () => {
   return (
     <>
-      <section className="sm:m -mb-20 bg-white" id="myProjects">
+      <section
+        className="sm:m -mb-20 mt-8 bg-white pb-16 pt-8 md:mt-16 md:lg:pb-28 lg:mt-20"
+        id="myProjects"
+      >
         <div className="relative flex items-center py-5">
           <div className="m-3 flex-grow border-t border-gray-400"></div>
           <span className="mx-4 flex-shrink font-pageFont text-4xl text-gray-600">
@@ -49,7 +52,7 @@ export const MyProjects = () => {
                     href="https://github.com/UlisesCodesForYou/Cutlery-Corner-"
                     target="_blank"
                   >
-                    <button className="text-md badge-outline badge rounded-sm border-emerald-800 bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-black duration-300 hover:scale-110 lg:text-black lg:hover:bg-emerald-500 xl:mt-4">
+                    <button className="text-md badge-outline badge mt-6 rounded-sm border-emerald-800 bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-black duration-300 hover:scale-110 lg:text-black lg:hover:bg-emerald-500">
                       View my code
                     </button>
                   </Link>
@@ -94,7 +97,7 @@ export const MyProjects = () => {
                     href="https://github.com/UlisesCodesForYou/thriftser-app"
                     target="_blank"
                   >
-                    <button className="text-md badge-outline badge rounded-sm border-emerald-800 bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-black duration-300 hover:scale-110 lg:text-black lg:hover:bg-emerald-500 xl:mt-4">
+                    <button className="text-md badge-outline badge mt-6 rounded-sm border-emerald-800 bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-black duration-300 hover:scale-110 lg:text-black lg:hover:bg-emerald-500">
                       View my code
                     </button>
                   </Link>
@@ -137,7 +140,7 @@ export const MyProjects = () => {
                     Mantine
                   </div>
                   <Link href="https://gaad.foundation/" target="_blank">
-                    <button className="text-md badge-outline badge rounded-sm border-emerald-800 bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-black duration-300 hover:scale-110 lg:text-black lg:hover:bg-emerald-500 xl:mt-4">
+                    <button className="text-md badge-outline badge mt-6 rounded-sm border-emerald-800 bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-black duration-300 hover:scale-110 lg:text-black lg:hover:bg-emerald-500">
                       Old GAAD Foundation site
                     </button>
                   </Link>
