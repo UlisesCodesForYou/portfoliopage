@@ -166,7 +166,7 @@ export const NavBar = () => {
       {/*</nav>*/}
 
       {/*####### NAV BAR 2 ##########*/}
-      <nav className="fixed top-0 left-0 z-50 mb-3 flex w-full flex-wrap items-center justify-between rounded-b-lg bg-[#014F86] py-3 py-3 px-2 font-pageFont shadow-xl">
+      <nav className="fixed top-0 left-0 z-50 mb-3 flex w-full flex-wrap items-center justify-between bg-[#014F86] py-3 py-3 px-2 font-pageFont shadow-xl">
         <div className="navbar-start">
           <Image
             src="/Chef-Hat4.png"
