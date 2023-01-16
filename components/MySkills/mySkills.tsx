@@ -26,75 +26,75 @@ export const MySkills = () => {
               </div>
 
               <div>
-                <h1 className="mt-4 text-center text-3xl font-semibold text-gray-800">
+                <h1 className="mt-4 text-center font-pageFont text-3xl font-semibold text-gray-800">
                   Front End Developer
                 </h1>
 
-                <h2 className="text-md mt-4 text-center font-semibold text-gray-500">
+                <h2 className="text-md mt-4 text-center font-pageFont font-semibold text-gray-500">
                   I like to create products/experiences people will enjoy.
                 </h2>
 
-                <h1 className="mt-10 text-center text-xl font-semibold text-gray-800">
+                <h1 className="mt-10 text-center font-pageFont text-xl font-semibold text-gray-800">
                   Here are some of the languages I speak:
                 </h1>
 
                 <div className="card-actions mt-4 justify-center">
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black">
                     HTML 5
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont  text-xs text-black">
                     Javascript(ES6)
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont  text-xs text-black">
                     CSS3
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5]  font-pageFont text-xs text-black">
                     React
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5]  font-pageFont text-xs text-black">
                     NextJS
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5]  font-pageFont text-xs text-black">
                     Typescript
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5]  font-pageFont text-xs text-black">
                     Tailwind CSS
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5]  font-pageFont text-xs text-black">
                     Mantine
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5]  font-pageFont text-xs text-black">
                     SASS
                   </div>
                 </div>
               </div>
-              <h2 className="mt-10 text-center text-xl font-semibold text-gray-800">
+              <h2 className="mt-10 text-center font-pageFont text-xl font-semibold text-gray-800 ">
                 Dev tools I use:
               </h2>
 
               <div className="card-actions mt-4 justify-center">
-                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black ">
                   Daisy UI
                 </div>
-                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black ">
                   WebStorm
                 </div>
-                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black ">
                   VS Code
                 </div>
-                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black ">
                   Flowbite
                 </div>
-                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black ">
                   Slack
                 </div>
-                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black ">
                   GitHub
                 </div>
-                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black ">
                   GitKrakken
                 </div>
-                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black ">
                   Git
                 </div>
               </div>
@@ -113,19 +113,19 @@ export const MySkills = () => {
               </div>
 
               <div>
-                <h1 className="mt-4 text-center text-3xl font-semibold text-gray-800">
+                <h1 className="mt-4 text-center font-pageFont text-3xl font-semibold text-gray-800 ">
                   UI Designer
                 </h1>
 
-                <h2 className="text-md mt-4 text-center font-semibold text-gray-500">
+                <h2 className="text-md mt-4 text-center font-pageFont font-semibold text-gray-500 ">
                   Besides creating, I also design UI interfaces.
                 </h2>
 
-                <h2 className="mt-4 text-center text-xl font-semibold text-gray-800">
+                <h2 className="mt-4 text-center font-pageFont text-xl font-semibold text-gray-800 ">
                   Design tools I use:
                 </h2>
 
-                <div className="card-actions mt-4 justify-center">
+                <div className="card-actions mt-4 justify-center font-pageFont ">
                   <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
                     Canva
                   </div>

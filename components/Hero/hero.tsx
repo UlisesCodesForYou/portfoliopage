@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+// <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
 export const Hero = () => {
   return (
     <>
@@ -8,12 +8,12 @@ export const Hero = () => {
         <main>
           <div className="relative px-6 lg:px-8">
             <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
-              <div className="sm:mt mt-16 md:mt-0 lg:mt-0">
+              <div className="sm:mt mt-16 font-pageFont md:mt-0 lg:mt-0 ">
                 <div>
                   <h1 className="text-4xl font-bold tracking-tight text-gray-600 sm:text-center sm:text-6xl">
                     Hello! My name is
                   </h1>
-                  <h1 className="text-4xl font-bold tracking-tight text-gray-600 sm:text-center sm:text-6xl">
+                  <h1 className="mt-4 bg-gradient-to-r from-[#014F86] to-emerald-300 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-center sm:text-6xl">
                     Ulises Orozco
                   </h1>
                   <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
