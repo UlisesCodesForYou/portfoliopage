@@ -15,7 +15,8 @@ export const MyProjects = () => {
           </span>
           <div className="m-3 flex-grow border-t border-gray-400"></div>
         </div>
-        {/*###### WORK SECTION 2 #######*/}
+
+        {/*###### WORK SECTION #######*/}
         <div className="mt-2 bg-opacity-10 py-10 md:lg:xl:px-20">
           <div className="group ml-4 grid grow grid-cols-1 md:justify-items-center md:lg:xl:grid-cols-3 lg:ml-3">
             <div className="card w-96 bg-base-100 shadow-xl">
@@ -29,7 +30,7 @@ export const MyProjects = () => {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title mb-1 text-xl text-gray-600">
+                <h2 className="card-title mb-4 mt-4 text-xl text-gray-600">
                   Cutlery Corner
                 </h2>
                 <p className="mb-3 text-gray-600">
@@ -71,10 +72,10 @@ export const MyProjects = () => {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title mb-1 text-xl text-gray-600">
+                <h2 className="card-title mb-4 mt-4 text-xl text-gray-600">
                   Thriftster Mobile App
                 </h2>
-                <p className="mb-3 text-gray-600">
+                <p className="mb-8 text-gray-600">
                   {" "}
                   This app was created after going to the thrift store and
                   finding a hidden treasure at a low price and wanted to share
@@ -116,7 +117,7 @@ export const MyProjects = () => {
                 />
               </figure>
               <div className="card-body mt-12">
-                <h2 className="card-title mb-1 text-xl text-gray-600">
+                <h2 className="card-title mb-4 mt-5  text-xl text-gray-600">
                   GAAD Foundation
                 </h2>
                 <p className="mb-3 text-gray-600">
