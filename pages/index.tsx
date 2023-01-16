@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Head>
         <title>Ulises Orozco</title>
-        <link rel="icon" href="/Chef-hat.png" />
+        <link rel="icon" href="/Chef-hat4.png" />
       </Head>
       <MainPage />
     </>

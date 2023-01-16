@@ -37,7 +37,7 @@ export const NavBar = () => {
                 to="aboutMe"
                 spy={true}
                 smooth={true}
-                offset={-125}
+                offset={-90}
                 duration={100}
               >
                 About Me
@@ -61,7 +61,7 @@ export const NavBar = () => {
                 to="myResume"
                 spy={true}
                 smooth={true}
-                offset={-125}
+                offset={-70}
                 duration={100}
               >
                 My Skills
