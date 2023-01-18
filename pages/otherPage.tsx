@@ -77,7 +77,7 @@ const AboutMe = () => {
             className="shadow-4xl mx-auto  h-full rounded-full object-cover shadow-none transition-shadow duration-300 ease-in-out hover:shadow-xl lg:max-w-2xl "
             src="/My-photo.jpeg"
             alt="bald guy with glasses"
-            width={500}
+            width={400}
             height={500}
           />
         </div>
