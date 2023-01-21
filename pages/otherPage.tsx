@@ -1,9 +1,54 @@
 import Image from "next/image";
 import { Link } from "react-scroll/modules";
-import { useState } from "react";
 
 const NavBar = () => {
-  const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
+  const data = [
+    {
+      id: "home",
+      text: "Home",
+      to: "home",
+      spy: true,
+      smooth: true,
+      offset: -150,
+      duration: 100,
+    },
+    {
+      id: "about_me",
+      text: "About Me",
+      to: "aboutMe",
+      spy: true,
+      smooth: true,
+      offset: -40,
+      duration: 100,
+    },
+    {
+      id: "my_projects",
+      text: "My Projects",
+      to: "myProjects",
+      spy: true,
+      smooth: true,
+      offset: -80,
+      duration: 100,
+    },
+    {
+      id: "my_skills",
+      text: "About Me",
+      to: "myProjects",
+      spy: true,
+      smooth: true,
+      offset: -20,
+      duration: 100,
+    },
+    {
+      id: "say_hello",
+      text: "CONTACT ME",
+      to: "sayHello",
+      spy: true,
+      smooth: true,
+      offset: -80,
+      duration: 100,
+    },
+  ];
 
   return (
     <>
