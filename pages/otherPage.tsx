@@ -39,8 +39,11 @@ const NavBar = () => {
       offset: -20,
       duration: 100,
     },
+  ];
+
+  const btnStuff = [
     {
-      id: "say_hello",
+      id: "button",
       text: "CONTACT ME",
       to: "sayHello",
       spy: true,
@@ -49,6 +52,38 @@ const NavBar = () => {
       duration: 100,
     },
   ];
+
+  const buttonData = btnStuff.map((bts: any) => (
+    <button
+      className="btn rounded-full duration-300 hover:scale-110 hover:text-[#023020] lg:bg-white lg:text-black lg:hover:bg-emerald-300"
+      key={bts.id}
+    >
+      <Link
+        to={bts.to}
+        spy={bts.spy}
+        smooth={bts.smooth}
+        offset={bts.offset}
+        duration={bts.duration}
+      >
+        {bts.text}
+      </Link>
+    </button>
+  ));
+
+  const navBarData = data.map((el) => (
+    <li className="py-4 text-white duration-300 hover:scale-125" key={el.id}>
+      <Link
+        className="outline-offset- block rounded hover:cursor-pointer lg:hover:bg-[#012A4A]"
+        to={el.to}
+        spy={el.spy}
+        smooth={el.smooth}
+        offset={el.offset}
+        duration={el.duration}
+      >
+        {el.text}
+      </Link>
+    </li>
+  ));
 
   return (
     <>
@@ -64,65 +99,8 @@ const NavBar = () => {
         </div>
         <div className="navbar relative flex hidden w-full justify-between lg:static lg:block lg:w-auto lg:justify-start">
           <ul className="menu menu-horizontal items-center gap-x-8">
-            <li className="py-4 text-white duration-300 hover:scale-125">
-              <Link
-                className="outline-offset- block rounded hover:cursor-pointer lg:hover:bg-[#012A4A]"
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={100}
-              >
-                Home
-              </Link>
-            </li>
-            <li className="py-4 text-white duration-300 hover:scale-125">
-              <Link
-                className="outline-offset- block rounded hover:cursor-pointer lg:hover:bg-[#012A4A]"
-                to="aboutMe"
-                spy={true}
-                smooth={true}
-                offset={-40}
-                duration={100}
-              >
-                About Me
-              </Link>
-            </li>
-            <li className="py-4 text-white duration-300 hover:scale-125">
-              <Link
-                className="rounded hover:cursor-pointer lg:hover:bg-[#012A4A]"
-                to="myProjects"
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={100}
-              >
-                My Projects
-              </Link>
-            </li>
-            <li className="py-4 text-white duration-300 hover:scale-125">
-              <Link
-                className="block rounded hover:cursor-pointer lg:hover:bg-[#012A4A]"
-                to="myResume"
-                spy={true}
-                smooth={true}
-                offset={-20}
-                duration={100}
-              >
-                My Skills
-              </Link>
-            </li>
-            <button className="btn rounded-full duration-300 hover:scale-110 hover:text-[#023020] lg:bg-white lg:text-black lg:hover:bg-emerald-300">
-              <Link
-                to="sayHello"
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={100}
-              >
-                CONTACT ME
-              </Link>
-            </button>
+            {navBarData}
+            {buttonData}
           </ul>
         </div>
 
