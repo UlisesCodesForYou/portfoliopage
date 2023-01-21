@@ -1,89 +1,173 @@
 import Image from "next/image";
+import { Link } from "react-scroll/modules";
+import { useState } from "react";
 
-const AboutMe = () => {
+const NavBar = () => {
+  const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
+
   return (
     <>
-      <section className=" bg-sky-50 pt-16 pb-16" id="aboutMe">
-        <div className="relative flex items-center py-5">
-          <div className="m-8 flex-grow border-t border-gray-400"></div>
-          <span className="mx-4 flex-shrink font-pageFont text-4xl text-gray-600">
-            About Me
-          </span>
-          <div className="m-8 flex-grow border-t border-gray-400"></div>
-        </div>
-        <div className="container mx-auto -mt-2 flex flex-col-reverse space-y-6 px-6 py-10 lg:h-[32rem] lg:flex-row lg:items-center  lg:py-16 ">
-          <div className="w-full lg:w-1/2">
-            <div className="sm::text text-center md:text-center lg:max-w-lg lg:text-left">
-              <div className="mt-8 space-y-5">
-                <p className="md:text text-md -mx-2 flex items-center font-pageFont text-[#343A40]">
-                  My journey to become a web developer started back in 2017.
-                  While working full-time in the restaurant industry, I was
-                  became aware of the similarities between coding and cooking.
-                  As time progressed, and when time allowed, I came to
-                  appreciate the correlation between both; the goal of providing
-                  a great user/guest experience. As time went on, I began to see
-                  each language and its properties as ingredients; allowing me
-                  more creative freedom.
-                </p>
-                <p className="md:text text-md -mx-2 flex items-center font-pageFont text-[#343A40]">
-                  Fast-forward to today, and I have completed a few websites and
-                  apps. I&apos;m currently a volunteer for the GAAD (Global
-                  Awareness Accessibility Day) Foundation in their site
-                  reconstruction.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="flex h-96 w-full items-center justify-center lg:w-1/2">
-            <Image
-              className="shadow-4xl mx-auto  h-full rounded-full object-cover shadow-none transition-shadow duration-300 ease-in-out hover:shadow-xl lg:max-w-2xl "
-              src="/My-photo.jpeg"
-              alt="bald guy with glasses"
-              width={500}
-              height={500}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/*##### OTHER ABOUT ME SECTION ######*/}
-      <div className="container mx-auto -mt-2 flex flex-col-reverse space-y-6 px-6 py-10 lg:h-[32rem] lg:flex-row lg:items-center  lg:py-16 ">
-        <div className="w-full lg:w-1/2">
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <div className="sm::text text-center md:text-center lg:max-w-lg lg:text-left">
-              <div className="mt-8 space-y-5">
-                <p className="md:text text-md -mx-2 flex items-center font-pageFont text-[#343A40]">
-                  My journey to become a web developer started back in 2017.
-                  While working full-time in the restaurant industry, I was
-                  became aware of the similarities between coding and cooking.
-                  As time progressed, and when time allowed, I came to
-                  appreciate the correlation between both; the goal of providing
-                  a great user/guest experience. As time went on, I began to see
-                  each language and its properties as ingredients; allowing me
-                  more creative freedom.
-                </p>
-                <p className="md:text text-md -mx-2 flex items-center font-pageFont text-[#343A40]">
-                  Fast-forward to today, and I have completed a few websites and
-                  apps. I&apos;m currently a volunteer for the GAAD (Global
-                  Awareness Accessibility Day) Foundation in their site
-                  reconstruction.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex h-96 w-full items-center justify-center lg:w-1/2">
+      <nav className="fixed top-0 left-0 z-50 mb-3 flex w-full flex-wrap items-center justify-between bg-[#014F86] py-3 py-3 px-2 font-pageFont shadow-xl">
+        <div className="navbar-start">
           <Image
-            className="shadow-4xl mx-auto  h-full rounded-full object-cover shadow-none transition-shadow duration-300 ease-in-out hover:shadow-xl lg:max-w-2xl "
-            src="/My-photo.jpeg"
-            alt="bald guy with glasses"
-            width={400}
-            height={500}
+            src="/Chef-Hat4.png"
+            width={70}
+            height={70}
+            alt="chef hat"
+            className="sm:m ml-5 animate-bounce"
           />
         </div>
-      </div>
+        <div className="navbar relative flex hidden w-full justify-between lg:static lg:block lg:w-auto lg:justify-start">
+          <ul className="menu menu-horizontal items-center gap-x-8">
+            <li className="py-4 text-white duration-300 hover:scale-125">
+              <Link
+                className="outline-offset- block rounded hover:cursor-pointer lg:hover:bg-[#012A4A]"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-150}
+                duration={100}
+              >
+                Home
+              </Link>
+            </li>
+            <li className="py-4 text-white duration-300 hover:scale-125">
+              <Link
+                className="outline-offset- block rounded hover:cursor-pointer lg:hover:bg-[#012A4A]"
+                to="aboutMe"
+                spy={true}
+                smooth={true}
+                offset={-40}
+                duration={100}
+              >
+                About Me
+              </Link>
+            </li>
+            <li className="py-4 text-white duration-300 hover:scale-125">
+              <Link
+                className="rounded hover:cursor-pointer lg:hover:bg-[#012A4A]"
+                to="myProjects"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={100}
+              >
+                My Projects
+              </Link>
+            </li>
+            <li className="py-4 text-white duration-300 hover:scale-125">
+              <Link
+                className="block rounded hover:cursor-pointer lg:hover:bg-[#012A4A]"
+                to="myResume"
+                spy={true}
+                smooth={true}
+                offset={-20}
+                duration={100}
+              >
+                My Skills
+              </Link>
+            </li>
+            <button className="btn rounded-full duration-300 hover:scale-110 hover:text-[#023020] lg:bg-white lg:text-black lg:hover:bg-emerald-300">
+              <Link
+                to="sayHello"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={100}
+              >
+                CONTACT ME
+              </Link>
+            </button>
+          </ul>
+        </div>
+
+        {/*##### DROP DOWN MENU #####*/}
+        <div className="dropdown-end dropdown">
+          <label tabIndex={0} className="btn-ghost btn lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="h-6 w-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+              />
+            </svg>
+          </label>
+          <ul
+            tabIndex={0}
+            className="dropdown-content menu rounded-box menu-compact mt-3 w-52 space-x-4 bg-[#012A4A] p-2 shadow"
+          >
+            <li className=" ml-4 rounded py-4 text-white">
+              <Link
+                className="outline-offset- block rounded hover:cursor-pointer hover:bg-emerald-300 hover:text-black"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-150}
+                duration={100}
+              >
+                Home
+              </Link>
+            </li>
+            <li className="rounded py-4 text-white">
+              <Link
+                className="outline-offset- block rounded hover:cursor-pointer hover:bg-emerald-300 hover:text-black"
+                to="aboutMe"
+                spy={true}
+                smooth={true}
+                offset={-150}
+                duration={100}
+              >
+                About Me
+              </Link>
+            </li>
+            <li className="rounded py-4 text-white">
+              <Link
+                className="hover:cursor-pointer hover:bg-emerald-300 hover:text-black"
+                to="myProjects"
+                spy={true}
+                smooth={true}
+                offset={-90}
+                duration={100}
+              >
+                My Projects
+              </Link>
+            </li>
+            <li className="rounded py-4 text-white">
+              <Link
+                className="block rounded hover:cursor-pointer hover:bg-emerald-300 hover:text-black"
+                to="myResume"
+                spy={true}
+                smooth={true}
+                offset={-90}
+                duration={100}
+              >
+                My Skills
+              </Link>
+            </li>
+            <li className="rounded py-4 text-white">
+              <Link
+                className="block rounded hover:cursor-pointer hover:bg-emerald-300 hover:text-black"
+                to="sayHello"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                Contact Me
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </>
   );
 };
 
-export default AboutMe;
+export default NavBar;
