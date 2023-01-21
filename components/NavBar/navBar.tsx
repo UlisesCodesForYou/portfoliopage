@@ -20,7 +20,7 @@ export const NavBar = () => {
       spy: true,
       smooth: true,
       offset: -40,
-      mobileOffset: -150,
+      mobileOffset: -30,
       duration: 100,
     },
     {
@@ -30,7 +30,7 @@ export const NavBar = () => {
       spy: true,
       smooth: true,
       offset: -80,
-      mobileOffset: -90,
+      mobileOffset: -70,
       duration: 100,
     },
     {
@@ -40,7 +40,7 @@ export const NavBar = () => {
       spy: true,
       smooth: true,
       offset: -20,
-      mobileOffset: -90,
+      mobileOffset: -10,
       duration: 100,
     },
   ];
@@ -53,7 +53,7 @@ export const NavBar = () => {
       spy: true,
       smooth: true,
       offset: -80,
-      mobileOffset: -100,
+      mobileOffset: -60,
       duration: 100,
     },
   ];
