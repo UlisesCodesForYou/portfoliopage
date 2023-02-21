@@ -6,7 +6,7 @@ export const AboutMe = () => {
       <section className=" bg-sky-50 pt-16 pb-16" id="aboutMe">
         <div className="relative flex items-center py-5">
           <div className="m-8 flex-grow border-t border-gray-400"></div>
-          <span className="mx-4 flex-shrink font-pageFont text-4xl text-gray-600">
+          <span className="mx-4 flex-shrink font-pageFont text-4xl text-gray-700">
             About Me
           </span>
           <div className="m-8 flex-grow border-t border-gray-400"></div>
@@ -15,7 +15,7 @@ export const AboutMe = () => {
           <div className="w-full lg:w-1/2">
             <div className="sm::text text-center md:text-center lg:max-w-lg lg:text-left">
               <div className="mt-8 space-y-5">
-                <p className="md:text text-md -mx-2 flex items-center font-pageFont text-[#343A40]">
+                <p className="md:text text-md -mx-2 flex items-center font-pageFont text-[#343A40] opacity-70">
                   My journey to become a web developer started back in 2017.
                   While working full-time in the restaurant industry, I was
                   became aware of the similarities between coding and cooking.
@@ -25,7 +25,7 @@ export const AboutMe = () => {
                   each language and its properties as ingredients; allowing me
                   more creative freedom.
                 </p>
-                <p className="md:text text-md -mx-2 flex items-center font-pageFont text-[#343A40]">
+                <p className="md:text text-md -mx-2 flex items-center font-pageFont text-[#343A40] opacity-70">
                   Fast-forward to today, and I have completed a few websites and
                   apps. I&apos;m currently a volunteer for the GAAD (Global
                   Awareness Accessibility Day) Foundation in their site
