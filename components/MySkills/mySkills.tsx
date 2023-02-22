@@ -6,7 +6,7 @@ export const MySkills = () => {
       <section className="mt-20 bg-sky-50 pt-24 " id="myResume">
         <div className="relative flex items-center py-5">
           <div className="m-3 flex-grow border-t border-gray-400"></div>
-          <span className="mx-4 flex-shrink font-pageFont text-4xl text-gray-600">
+          <span className="mx-4 flex-shrink font-pageFont text-4xl text-gray-700">
             My Skills
           </span>
           <div className="m-3 flex-grow border-t border-gray-400"></div>
@@ -27,7 +27,7 @@ export const MySkills = () => {
 
               <div>
                 <h1 className="mt-4 text-center font-pageFont text-3xl font-semibold text-gray-800">
-                  Front End Developer
+                  Frontend Developer
                 </h1>
 
                 <h2 className="text-md mt-4 text-center font-pageFont font-semibold text-gray-500">
@@ -39,31 +39,31 @@ export const MySkills = () => {
                 </h1>
 
                 <div className="card-actions mt-4 justify-center">
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black">
+                  <div className="badge-outline badge border-none bg-[#A9D6E5] font-pageFont text-xs text-black shadow-lg ">
                     HTML 5
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont  text-xs text-black">
+                  <div className="badge-outline badge border-none bg-[#A9D6E5]  font-pageFont text-xs text-black shadow-lg ">
                     Javascript(ES6)
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont  text-xs text-black">
+                  <div className="badge-outline badge border-none bg-[#A9D6E5]  font-pageFont text-xs text-black shadow-lg ">
                     CSS3
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5]  font-pageFont text-xs text-black">
+                  <div className="badge-outline badge border-none  bg-[#A9D6E5] font-pageFont text-xs text-black shadow-lg ">
                     React
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5]  font-pageFont text-xs text-black">
+                  <div className="badge-outline badge border-none  bg-[#A9D6E5] font-pageFont text-xs text-black shadow-lg ">
                     NextJS
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5]  font-pageFont text-xs text-black">
+                  <div className="badge-outline badge border-none  bg-[#A9D6E5] font-pageFont text-xs text-black shadow-lg ">
                     Typescript
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5]  font-pageFont text-xs text-black">
+                  <div className="badge-outline badge border-none  bg-[#A9D6E5] font-pageFont text-xs text-black shadow-lg ">
                     Tailwind CSS
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5]  font-pageFont text-xs text-black">
+                  <div className="badge-outline badge border-none bg-[#A9D6E5] font-pageFont text-xs text-black shadow-lg ">
                     Mantine
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5]  font-pageFont text-xs text-black">
+                  <div className="badge-outline badge border-none  bg-[#A9D6E5] font-pageFont text-xs text-black shadow-lg ">
                     SASS
                   </div>
                 </div>
@@ -73,28 +73,28 @@ export const MySkills = () => {
               </h2>
 
               <div className="card-actions mt-4 justify-center">
-                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black ">
+                <div className="badge-outline badge border-none  bg-[#A9D6E5] font-pageFont text-xs  text-black shadow-lg ">
                   Daisy UI
                 </div>
-                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black ">
+                <div className="badge-outline badge border-none bg-[#A9D6E5] font-pageFont text-xs  text-black shadow-lg ">
                   WebStorm
                 </div>
-                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black ">
+                <div className="badge-outline badge border-none  bg-[#A9D6E5] font-pageFont text-xs  text-black shadow-lg ">
                   VS Code
                 </div>
-                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black ">
+                <div className="badge-outline badge border-none  bg-[#A9D6E5] font-pageFont text-xs  text-black shadow-lg ">
                   Flowbite
                 </div>
-                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black ">
+                <div className="badge-outline badge border-none  bg-[#A9D6E5] font-pageFont text-xs  text-black shadow-lg ">
                   Slack
                 </div>
-                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black ">
+                <div className="badge-outline badge border-none  bg-[#A9D6E5] font-pageFont text-xs  text-black shadow-lg ">
                   GitHub
                 </div>
-                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black ">
+                <div className="badge-outline badge border-none bg-[#A9D6E5] font-pageFont text-xs  text-black shadow-lg ">
                   GitKrakken
                 </div>
-                <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] font-pageFont text-xs text-black ">
+                <div className="badge-outline badge border-none bg-[#A9D6E5] font-pageFont text-xs  text-black shadow-lg ">
                   Git
                 </div>
               </div>
@@ -126,10 +126,10 @@ export const MySkills = () => {
                 </h2>
 
                 <div className="card-actions mt-4 justify-center font-pageFont ">
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge  border-none bg-[#A9D6E5] text-xs text-black shadow-lg ">
                     Canva
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge  border-none bg-[#A9D6E5] text-xs text-black shadow-lg ">
                     Figma
                   </div>
                 </div>

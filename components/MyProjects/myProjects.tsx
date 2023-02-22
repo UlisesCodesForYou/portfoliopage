@@ -39,7 +39,7 @@ export const MyProjects = () => {
                   cutlery store. This is a static website with functioning tabs.
                   This is my first completed project.
                 </p>
-                <div className="card-actions justify-center">
+                <div className="card-actions justify-center ">
                   <div className="badge-outline badge border-none bg-[#A9D6E5] text-xs font-bold text-[#184250] shadow-lg">
                     React
                   </div>
