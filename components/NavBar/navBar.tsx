@@ -52,7 +52,7 @@ export const NavBar = () => {
       to: "sayHello",
       spy: true,
       smooth: true,
-      offset: -80,
+      offset: -60,
       mobileOffset: -60,
       duration: 100,
     },

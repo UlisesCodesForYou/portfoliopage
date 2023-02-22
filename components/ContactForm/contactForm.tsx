@@ -66,8 +66,9 @@ export const ContactForm = () => {
         <section className="-mt-2 bg-white md:-mt-4">
           <div className="mx-auto max-w-screen-md py-8 px-4 lg:py-16">
             <p className="mb-8 text-center font-pageFont font-light text-[#6C757D] sm:text-xl lg:mb-16">
-              Got any more questions regarding my projects? Need advice on your
-              cooking skills? Please feel free to ask.{" "}
+              I&apos;m currently looking to get my Developer career off in the
+              right start. Contact me if you liked my profile. Also, feel free
+              to ask for advice if you&apos;d like to improve your cooking{" "}
             </p>
             <form
               name="contact  v1"
