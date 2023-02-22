@@ -10,7 +10,7 @@ export const MyProjects = () => {
       >
         <div className="relative flex items-center py-5">
           <div className="m-3 flex-grow border-t border-gray-400"></div>
-          <span className="mx-4 flex-shrink font-pageFont text-4xl text-gray-600">
+          <span className="mx-4 flex-shrink font-pageFont text-4xl text-gray-800">
             My Projects
           </span>
           <div className="m-3 flex-grow border-t border-gray-400"></div>
@@ -30,30 +30,30 @@ export const MyProjects = () => {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title mb-4 mt-4 text-xl text-gray-600">
+                <h2 className="card-title mb-4 mt-4 text-xl text-gray-700">
                   Cutlery Corner
                 </h2>
-                <p className="mb-3 text-gray-600">
+                <p className="mb-3 text-gray-500">
                   {" "}
                   As a former chef, I thought it would be fun to create a
                   cutlery store. This is a static website with functioning tabs.
                   This is my first completed project.
                 </p>
                 <div className="card-actions justify-center">
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-none bg-[#A9D6E5] text-xs font-bold text-[#184250] shadow-lg">
                     React
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-none bg-[#A9D6E5] text-xs font-bold text-[#184250] shadow-lg">
                     React Router
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-none bg-[#A9D6E5] text-xs font-bold text-[#184250] shadow-lg">
                     MirageJS
                   </div>
                   <Link
                     href="https://github.com/UlisesCodesForYou/Cutlery-Corner-"
                     target="_blank"
                   >
-                    <button className="text-md badge-outline badge mt-6 rounded-sm border-emerald-800 bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-black duration-300 hover:scale-110 lg:text-black lg:hover:bg-emerald-500">
+                    <button className="text-md badge-outline badge mt-6 rounded-sm border-none bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-black text-emerald-900 shadow-lg duration-300 hover:scale-110 hover:text-white lg:hover:bg-emerald-500">
                       View my code
                     </button>
                   </Link>
@@ -72,33 +72,30 @@ export const MyProjects = () => {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title mb-4 mt-4 text-xl text-gray-600">
+                <h2 className="card-title mb-4 mt-4 text-xl text-gray-700">
                   Thriftster Mobile App
                 </h2>
-                <p className="mb-8 text-gray-600">
+                <p className="mb-8 text-gray-500">
                   {" "}
                   This app was created after going to the thrift store and
                   finding a hidden treasure at a low price and wanted to share
                   the location. So, I decided to create this app to do so.
                 </p>
                 <div className="card-actions justify-center">
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
-                    React
-                  </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-none  bg-[#A9D6E5] text-xs font-bold text-[#184250] shadow-lg ">
                     NextJS
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-none  bg-[#A9D6E5] text-xs font-bold text-[#184250] shadow-lg ">
                     Typescript
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-none  bg-[#A9D6E5] text-xs font-bold text-[#184250] shadow-lg ">
                     Tailwind CSS
                   </div>
                   <Link
                     href="https://github.com/UlisesCodesForYou/thriftser-app"
                     target="_blank"
                   >
-                    <button className="text-md badge-outline badge mt-6 rounded-sm border-emerald-800 bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-black duration-300 hover:scale-110 lg:text-black lg:hover:bg-emerald-500">
+                    <button className="text-md badge-outline badge mt-6 rounded-sm border-none border-emerald-800 bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-black text-emerald-900 shadow-lg duration-300 hover:scale-110 hover:text-white lg:hover:bg-emerald-500">
                       View my code
                     </button>
                   </Link>
@@ -117,10 +114,10 @@ export const MyProjects = () => {
                 />
               </figure>
               <div className="card-body mt-12">
-                <h2 className="card-title mb-4 mt-5  text-xl text-gray-600">
+                <h2 className="card-title mb-4 mt-5  text-xl text-gray-700">
                   GAAD Foundation
                 </h2>
-                <p className="mb-3 text-gray-600">
+                <p className="mb-3 text-gray-500">
                   {" "}
                   I&apos;m currently volunteering in the reconstruction of this
                   website. The GAAD Foundation’s vision is for accessibility to
@@ -128,20 +125,17 @@ export const MyProjects = () => {
                   and digital products.
                 </p>
                 <div className="card-actions justify-center">
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
-                    React
-                  </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-none bg-[#A9D6E5] text-xs font-bold text-[#184250] shadow-lg ">
                     NextJS
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-none bg-[#A9D6E5] text-xs font-bold text-[#184250] shadow-lg ">
                     Typescript
                   </div>
-                  <div className="badge-outline badge border-[#61A5C2] bg-[#A9D6E5] text-xs text-black">
+                  <div className="badge-outline badge border-none bg-[#A9D6E5] text-xs font-bold text-[#184250] shadow-lg ">
                     Mantine
                   </div>
                   <Link href="https://gaad.foundation/" target="_blank">
-                    <button className="text-md badge-outline badge mt-6 rounded-sm border-emerald-800 bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-black duration-300 hover:scale-110 lg:text-black lg:hover:bg-emerald-500">
+                    <button className="text-md badge-outline badge mt-6 rounded-sm border-none bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-emerald-900 shadow-lg duration-300 hover:scale-110 hover:text-white lg:hover:bg-emerald-500">
                       Old GAAD Foundation site
                     </button>
                   </Link>
