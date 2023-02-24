@@ -30,10 +30,10 @@ export const MyProjects = () => {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title mb-4 mt-4 text-xl text-gray-700">
+                <h2 className="card-title m-auto mb-4 mt-4 text-xl text-gray-700">
                   Cutlery Corner
                 </h2>
-                <p className="mb-3 text-gray-500">
+                <p className="mb-3 text-center text-gray-500">
                   {" "}
                   As a former chef, I thought it would be fun to create a
                   cutlery store. This is a static website with functioning tabs.
@@ -72,10 +72,10 @@ export const MyProjects = () => {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title mb-4 mt-4 text-xl text-gray-700">
+                <h2 className="card-title m-auto mb-4 mt-4 text-xl text-gray-700">
                   Thriftster Mobile App
                 </h2>
-                <p className="mb-8 text-gray-500">
+                <p className="mb-8 text-center text-gray-500">
                   {" "}
                   This app was created after going to the thrift store and
                   finding a hidden treasure at a low price and wanted to share
@@ -114,10 +114,10 @@ export const MyProjects = () => {
                 />
               </figure>
               <div className="card-body mt-12">
-                <h2 className="card-title mb-4 mt-5  text-xl text-gray-700">
+                <h2 className="card-title m-auto mb-4  mt-5 text-xl text-gray-700">
                   GAAD Foundation
                 </h2>
-                <p className="mb-3 text-gray-500">
+                <p className="mb-3 text-center text-gray-500">
                   {" "}
                   I&apos;m currently volunteering in the reconstruction of this
                   website. The GAAD Foundation’s vision is for accessibility to
