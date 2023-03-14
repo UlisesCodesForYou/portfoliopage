@@ -113,7 +113,7 @@ export const MyProjects = () => {
                   className="-mb-1 transform rounded-lg"
                 />
               </figure>
-              <div className="card-body mt-12">
+              <div className="card-body mt-[5px] lg:mt-[95px]">
                 <h2 className="card-title m-auto mb-4  mt-5 text-xl text-gray-700">
                   GAAD Foundation
                 </h2>
@@ -135,8 +135,8 @@ export const MyProjects = () => {
                     Mantine
                   </div>
                   <Link href="https://gaad.foundation/" target="_blank">
-                    <button className="badge-outline badge mt-6 rounded-sm border-none bg-emerald-300 py-4 px-9 font-pageFont text-xs tracking-wide text-emerald-900 shadow-lg duration-300 hover:scale-110 hover:text-white lg:hover:bg-emerald-500">
-                      Visit the new GAAD Foundation website
+                    <button className="text-md badge-outline badge mt-6 rounded-sm border-none bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-emerald-900 shadow-lg duration-300 hover:scale-110 hover:text-white lg:hover:bg-emerald-500">
+                      GAAD Foundation website
                     </button>
                   </Link>
                 </div>

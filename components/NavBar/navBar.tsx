@@ -132,7 +132,7 @@ export const NavBar = () => {
             className="sm:m ml-5 animate-bounce"
           />
         </div>
-        <div className="navbar relative flex w-full justify-between  sm:hidden md:hidden lg:block lg:w-auto lg:justify-start">
+        <div className="xs:hidden relative flex justify-between sm:hidden md:hidden lg:block lg:w-auto lg:justify-start">
           <ul className="menu menu-horizontal items-center gap-x-8">
             {navBarData}
             <div className="uppercase">{buttonData}</div>
