@@ -106,7 +106,7 @@ export const MyProjects = () => {
             <div className="card mt-6 w-96 bg-base-100 shadow-xl md:lg:mt-0">
               <figure>
                 <Image
-                  src="/GAAD-Grid.png"
+                  src="/GAAD-Foundation-Hero-Img.png"
                   width={500}
                   height={800}
                   alt="GAAD foundation"
@@ -119,10 +119,10 @@ export const MyProjects = () => {
                 </h2>
                 <p className="mb-3 text-center text-gray-500">
                   {" "}
-                  I&apos;m currently volunteering in the reconstruction of this
-                  website. The GAAD Foundation’s vision is for accessibility to
-                  be part of the product development lifecycle for technology
-                  and digital products.
+                  I&apos;m currently a Front End Developer in the reconstruction
+                  of this website. The GAAD Foundation’s vision is for
+                  accessibility to be part of the product development lifecycle
+                  for technology and digital products.
                 </p>
                 <div className="card-actions justify-center">
                   <div className="badge-outline badge border-none bg-[#A9D6E5] text-xs font-bold text-[#184250] shadow-lg ">
@@ -135,8 +135,8 @@ export const MyProjects = () => {
                     Mantine
                   </div>
                   <Link href="https://gaad.foundation/" target="_blank">
-                    <button className="text-md badge-outline badge mt-6 rounded-sm border-none bg-emerald-300 py-4 px-9 font-pageFont tracking-wide text-emerald-900 shadow-lg duration-300 hover:scale-110 hover:text-white lg:hover:bg-emerald-500">
-                      Old GAAD Foundation site
+                    <button className="badge-outline badge mt-6 rounded-sm border-none bg-emerald-300 py-4 px-9 font-pageFont text-xs tracking-wide text-emerald-900 shadow-lg duration-300 hover:scale-110 hover:text-white lg:hover:bg-emerald-500">
+                      Visit the new GAAD Foundation website
                     </button>
                   </Link>
                 </div>
